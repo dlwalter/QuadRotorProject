@@ -30,7 +30,7 @@ if ~isempty(evalin('base','who(''initVars'')'))
 end
 
 % Close top level model in case is open
-sys = 'flightSimulation';
+sys = 'asbQuadcopter';
 if bdIsLoaded(sys)
     close_system(sys);
 end

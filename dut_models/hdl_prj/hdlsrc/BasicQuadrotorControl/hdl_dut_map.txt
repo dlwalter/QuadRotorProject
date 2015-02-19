@@ -1,0 +1,18 @@
+ --> hdl_dut_pkg
+BasicQuadrotorControl/hdl_dut/ADXL345_read/Control_Signals --> Control_Signals
+BasicQuadrotorControl/hdl_dut/ADXL345_read/XYZ_shiftRegister/rising_edge_detect --> rising_edge_detect
+BasicQuadrotorControl/hdl_dut/ADXL345_read/XYZ_shiftRegister/shiftRegister_48 --> shiftRegister_48
+BasicQuadrotorControl/hdl_dut/ADXL345_read/XYZ_shiftRegister --> XYZ_shiftRegister
+BasicQuadrotorControl/hdl_dut/ADXL345_read/Read_X_Y_Z --> Read_X_Y_Z
+BasicQuadrotorControl/hdl_dut/ADXL345_read/Write --> Write
+BasicQuadrotorControl/hdl_dut/ADXL345_read --> ADXL345_read
+BasicQuadrotorControl/hdl_dut/PWM_Motor1/Calculate f_coeff --> Calculate_f_coeff
+BasicQuadrotorControl/hdl_dut/PWM_Motor1/Chart --> Chart
+BasicQuadrotorControl/hdl_dut/PWM_Motor1 --> PWM_Motor1
+BasicQuadrotorControl/hdl_dut/PWM_Motor2/Calculate f_coeff --> Calculate_f_coeff_block
+BasicQuadrotorControl/hdl_dut/PWM_Motor2 --> PWM_Motor2
+BasicQuadrotorControl/hdl_dut/PWM_Motor3/Calculate f_coeff --> Calculate_f_coeff_block1
+BasicQuadrotorControl/hdl_dut/PWM_Motor3 --> PWM_Motor3
+BasicQuadrotorControl/hdl_dut/PWM_Motor4/Calculate f_coeff --> Calculate_f_coeff_block2
+BasicQuadrotorControl/hdl_dut/PWM_Motor4 --> PWM_Motor4
+BasicQuadrotorControl/hdl_dut --> hdl_dut

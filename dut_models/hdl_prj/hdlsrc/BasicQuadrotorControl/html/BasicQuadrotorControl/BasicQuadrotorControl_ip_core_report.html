@@ -1,0 +1,690 @@
+<html>
+<head>
+<title>IP Core Generation Report for BasicQuadrotorControl</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style type="text/css">
+table {
+	width: 100%;
+	border: 1px solid black;
+}
+
+div {
+	line-heigh: 90%;
+}
+
+h2.title {
+	color: #000066;
+	font-weight: bold;
+}
+
+h3.sectionHeading {
+	color: #000066;
+	font-weight: bold;
+}
+
+td.distinctCellColor {
+	background-color: #eeeeff;
+}
+
+td.summaryTableSndColOddRow {
+	background-color: #eeeeff;
+	text-align: right;
+}
+
+td.summaryTableSndColEvenRow {
+	text-align: right;
+}
+
+thead.reportTableHeader {
+	background-color: #eeeeee;
+	font-weight: bold;
+}
+
+</style>
+
+</head>
+<body>
+<h2 class="title">IP Core Generation Report for BasicQuadrotorControl</h2>
+<div>
+<h3 class="sectionHeading">Summary</h3>
+<table>
+<tbody>
+<tr>
+<td class="distinctCellColor">IP core name
+</td>
+<td class="summaryTableSndColOddRow">basicquadrotorcontrol_hdl_dut_pcore
+</td>
+</tr>
+<tr>
+<td>IP core version
+</td>
+<td class="summaryTableSndColEvenRow">v1.00.a
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">IP core folder
+</td>
+<td class="summaryTableSndColOddRow"><a href="matlab:uiopen('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\*.*')">hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a</a>
+</td>
+</tr>
+<tr>
+<td>Target platform
+</td>
+<td class="summaryTableSndColEvenRow">ZedBoard
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">Target tool
+</td>
+<td class="summaryTableSndColOddRow">Xilinx ISE
+</td>
+</tr>
+<tr>
+<td>Target language
+</td>
+<td class="summaryTableSndColEvenRow">VHDL
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">Reference Design
+</td>
+<td class="summaryTableSndColOddRow">Default system (ISE 14.7)
+</td>
+</tr>
+<tr>
+<td>Model
+</td>
+<td class="summaryTableSndColEvenRow"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl')">BasicQuadrotorControl</a>
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">Model version
+</td>
+<td class="summaryTableSndColOddRow">1.144
+</td>
+</tr>
+<tr>
+<td>HDL Coder version
+</td>
+<td class="summaryTableSndColEvenRow">3.5
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">IP core generated on
+</td>
+<td class="summaryTableSndColOddRow">18-Feb-2015 16:31:57
+</td>
+</tr>
+<tr>
+<td>IP core generated for
+</td>
+<td class="summaryTableSndColEvenRow"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:19')">hdl_dut</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3 class="sectionHeading">Target Interface Configuration</h3>
+You chose the following target interface configuration for 
+<a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl')">BasicQuadrotorControl</a>
+:
+<br/><br/>
+Processor/FPGA synchronization mode: 
+<b>Free running</b>
+<br/><br/>
+Target platform interface table:
+<br/>
+<table>
+<thead class="reportTableHeader">
+<tr>
+<td>Port Name
+</td>
+<td>Port Type
+</td>
+<td>Data Type
+</td>
+<td>Target Platform Interfaces
+</td>
+<td>Bit Range / Address / FPGA Pin
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:20')">CMD</a>
+</td>
+<td>Inport
+</td>
+<td>uint16
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"100"
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:21')">CMD_VLD</a>
+</td>
+<td class="distinctCellColor">Inport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">AXI4-Lite
+</td>
+<td class="distinctCellColor">x"104"
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:23')">SDO</a>
+</td>
+<td>Inport
+</td>
+<td>boolean
+</td>
+<td>Pmod Connector JA1 [0:7]
+</td>
+<td>[3]
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:231')">en_motor1</a>
+</td>
+<td class="distinctCellColor">Inport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">AXI4-Lite
+</td>
+<td class="distinctCellColor">x"108"
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:232')">duty_motor1</a>
+</td>
+<td>Inport
+</td>
+<td>uint8
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"10C"
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:235')">en_motor2</a>
+</td>
+<td class="distinctCellColor">Inport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">AXI4-Lite
+</td>
+<td class="distinctCellColor">x"110"
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:236')">duty_motor2</a>
+</td>
+<td>Inport
+</td>
+<td>uint8
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"114"
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:416')">en_motor3</a>
+</td>
+<td class="distinctCellColor">Inport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">AXI4-Lite
+</td>
+<td class="distinctCellColor">x"118"
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:417')">duty_motor3</a>
+</td>
+<td>Inport
+</td>
+<td>uint8
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"11C"
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:418')">en_motor4</a>
+</td>
+<td class="distinctCellColor">Inport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">AXI4-Lite
+</td>
+<td class="distinctCellColor">x"120"
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:419')">duty_motor4</a>
+</td>
+<td>Inport
+</td>
+<td>uint8
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"124"
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:24')">X</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">uint16
+</td>
+<td class="distinctCellColor">AXI4-Lite
+</td>
+<td class="distinctCellColor">x"128"
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:25')">Y</a>
+</td>
+<td>Outport
+</td>
+<td>uint16
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"12C"
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:26')">Z</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">uint16
+</td>
+<td class="distinctCellColor">AXI4-Lite
+</td>
+<td class="distinctCellColor">x"130"
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:82')">XYZ_Valid</a>
+</td>
+<td>Outport
+</td>
+<td>boolean
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"134"
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:27')">CS</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">Pmod Connector JA1 [0:7]
+</td>
+<td class="distinctCellColor">[1]
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:28')">SCLK</a>
+</td>
+<td>Outport
+</td>
+<td>boolean
+</td>
+<td>Pmod Connector JA1 [0:7]
+</td>
+<td>[0]
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:29')">SDI</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">Pmod Connector JA1 [0:7]
+</td>
+<td class="distinctCellColor">[2]
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:230')">PWM_motor1</a>
+</td>
+<td>Outport
+</td>
+<td>boolean
+</td>
+<td>Pmod Connector JB1 [0:7]
+</td>
+<td>[0]
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:239')">PWM_motor2</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">Pmod Connector JB1 [0:7]
+</td>
+<td class="distinctCellColor">[1]
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:413')">PWM_motor3</a>
+</td>
+<td>Outport
+</td>
+<td>boolean
+</td>
+<td>Pmod Connector JB1 [0:7]
+</td>
+<td>[2]
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('BasicQuadrotorControl:414')">PWM_motor4</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">Pmod Connector JB1 [0:7]
+</td>
+<td class="distinctCellColor">[3]
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3 class="sectionHeading">Register Address Mapping</h3>
+The following AXI4-Lite bus accessible registers were generated for this IP core:
+<br/><br/>
+<table>
+<thead class="reportTableHeader">
+<tr>
+<td>Register Name
+</td>
+<td>Address Offset
+</td>
+<td>Description
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IPCore_Reset
+</td>
+<td>0x0
+</td>
+<td>write 0x1 to bit 0 to reset IP core
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">IPCore_Enable
+</td>
+<td class="distinctCellColor">0x4
+</td>
+<td class="distinctCellColor">enabled (by default) when bit 0 is 0x1
+</td>
+</tr>
+<tr>
+<td>CMD_Data
+</td>
+<td>0x100
+</td>
+<td>data register for port CMD
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">CMD_VLD_Data
+</td>
+<td class="distinctCellColor">0x104
+</td>
+<td class="distinctCellColor">data register for port CMD_VLD
+</td>
+</tr>
+<tr>
+<td>en_motor1_Data
+</td>
+<td>0x108
+</td>
+<td>data register for port en_motor1
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">duty_motor1_Data
+</td>
+<td class="distinctCellColor">0x10C
+</td>
+<td class="distinctCellColor">data register for port duty_motor1
+</td>
+</tr>
+<tr>
+<td>en_motor2_Data
+</td>
+<td>0x110
+</td>
+<td>data register for port en_motor2
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">duty_motor2_Data
+</td>
+<td class="distinctCellColor">0x114
+</td>
+<td class="distinctCellColor">data register for port duty_motor2
+</td>
+</tr>
+<tr>
+<td>en_motor3_Data
+</td>
+<td>0x118
+</td>
+<td>data register for port en_motor3
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">duty_motor3_Data
+</td>
+<td class="distinctCellColor">0x11C
+</td>
+<td class="distinctCellColor">data register for port duty_motor3
+</td>
+</tr>
+<tr>
+<td>en_motor4_Data
+</td>
+<td>0x120
+</td>
+<td>data register for port en_motor4
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">duty_motor4_Data
+</td>
+<td class="distinctCellColor">0x124
+</td>
+<td class="distinctCellColor">data register for port duty_motor4
+</td>
+</tr>
+<tr>
+<td>X_Data
+</td>
+<td>0x128
+</td>
+<td>data register for port X
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">Y_Data
+</td>
+<td class="distinctCellColor">0x12C
+</td>
+<td class="distinctCellColor">data register for port Y
+</td>
+</tr>
+<tr>
+<td>Z_Data
+</td>
+<td>0x130
+</td>
+<td>data register for port Z
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">XYZ_Valid_Data
+</td>
+<td class="distinctCellColor">0x134
+</td>
+<td class="distinctCellColor">data register for port XYZ_Valid
+</td>
+</tr>
+</tbody>
+</table>
+<br/>
+The register address mapping is also in the following C header file for you to use when programming the processor:
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\include\basicquadrotorcontrol_hdl_dut_pcore_addr.h')">include\basicquadrotorcontrol_hdl_dut_pcore_addr.h</a>
+<br/>
+The IP core name is appended to the register names to avoid name conflicts.
+</div>
+<div>
+<h3 class="sectionHeading">IP Core User Guide</h3>
+<b>Theory of Operation</b>
+<br/><br/>
+This IP core is designed to be connected to an embedded processor with an 
+<b>AXI4-Lite interface. </b>
+The processor acts as master, and the IP core acts as slave. By accessing the generated registers via the AXI4-Lite interface, the processor can control the IP core, and read and write data from and to the IP core. 
+<br/><br/>
+For example, to reset the IP core, write 0x1 to the bit 0 of IPCore_Reset register. To enable or disable the IP core, write 0x1 or 0x0 to the IPCore_Enable register. To access the data ports of the MATLAB/Simulink algorithm, read or write to the associated data registers.
+<br/><br/>
+<img src="doc_arch_axi4_lite.jpg"/>
+<br/><br/>
+This IP core also support the 
+<b>External Port </b>
+interface. To connect the external ports to the FPGA external IO pins, add FPGA pin assignment constraints in the Xilinx EDK environment.
+<br/><br/>
+<b>Processor/FPGA Synchronization</b>
+<br/><br/>
+The 
+<b>Free running </b>
+mode means there is no explicit synchronization between embedded processor software execution (SW) and the IP core (HW). SW and HW runs independently. The data written from the processor to IP core takes effect immediately, and the data read from the IP core is the latest data available on the IP core output ports. 
+<br/><br/>
+<img src="free_running.jpg"/>
+<br/><br/>
+<b>Xilinx EDK Environment Integration</b>
+<br/><br/>
+This IP Core is generated for the Xilinx EDK environment. The following steps are an example showing how to integrate the generated IP core into Xilinx EDK environment:
+<br/><br/>
+1. Copy the IP core folder into the "pcores" folder in your Xilinx Platform Studio (XPS) project. This step adds the IP core into the XPS project user library.
+<br/>
+2. In the XPS project, find the IP core in the user library and add the IP core to the design.
+<br/>
+3. Connect the S_AXI port of the IP core to the embedded processor's AXI master port.
+<br/>
+4. Connect the clock and reset ports of the IP core to the global clock and reset signals.
+<br/>
+5. Assign a base address for the IP core.
+<br/>
+6. Connect external ports and add FPGA pin assignment constraints.
+<br/>
+7. Generate FPGA bitstream and download the bitstream to target device.
+<br/><br/>
+If you are targeting Xilinx Zynq hardwares supported by HDL Coder Support Package for Xilinx Zynq-7000, you can select the board you are using in the Target platform option in the Set Target > Set Target Device and Synthesis Tool task. You can then use Embedded System Integration tasks in HDL Workflow Advisor to help you integrate the generated IP core into Xilinx EDK environment.
+</div>
+<div>
+<h3 class="sectionHeading">IP Core File List</h3>
+The IP core folder is located at:
+<br/>
+<a href="matlab:uiopen('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\*.*')">hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a</a>
+<br/>
+Following files are generated under this folder:
+<br/><br/>
+<b>IP core definition files</b>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\data\basicquadrotorcontrol_hdl_dut_pcore_v2_1_0.mpd')">data\basicquadrotorcontrol_hdl_dut_pcore_v2_1_0.mpd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\data\basicquadrotorcontrol_hdl_dut_pcore_v2_1_0.pao')">data\basicquadrotorcontrol_hdl_dut_pcore_v2_1_0.pao</a>
+<br/><br/>
+<b>IP core report</b>
+<br/>
+<a href="matlab:web('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\doc\BasicQuadrotorControl_ip_core_report.html')">doc\BasicQuadrotorControl_ip_core_report.html</a>
+<br/><br/>
+<b>IP core HDL source files</b>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\hdl_dut_pkg.vhd')">hdl\vhdl\hdl_dut_pkg.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\Control_Signals.vhd')">hdl\vhdl\Control_Signals.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\rising_edge_detect.vhd')">hdl\vhdl\rising_edge_detect.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\shiftRegister_48.vhd')">hdl\vhdl\shiftRegister_48.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\XYZ_shiftRegister.vhd')">hdl\vhdl\XYZ_shiftRegister.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\Read_X_Y_Z.vhd')">hdl\vhdl\Read_X_Y_Z.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\Write.vhd')">hdl\vhdl\Write.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\ADXL345_read.vhd')">hdl\vhdl\ADXL345_read.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\Calculate_f_coeff.vhd')">hdl\vhdl\Calculate_f_coeff.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\Chart.vhd')">hdl\vhdl\Chart.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\PWM_Motor1.vhd')">hdl\vhdl\PWM_Motor1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\Calculate_f_coeff_block.vhd')">hdl\vhdl\Calculate_f_coeff_block.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\PWM_Motor2.vhd')">hdl\vhdl\PWM_Motor2.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\Calculate_f_coeff_block1.vhd')">hdl\vhdl\Calculate_f_coeff_block1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\PWM_Motor3.vhd')">hdl\vhdl\PWM_Motor3.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\Calculate_f_coeff_block2.vhd')">hdl\vhdl\Calculate_f_coeff_block2.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\PWM_Motor4.vhd')">hdl\vhdl\PWM_Motor4.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\hdl_dut.vhd')">hdl\vhdl\hdl_dut.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\basicquadrotorcontrol_hdl_dut_pcore_dut.vhd')">hdl\vhdl\basicquadrotorcontrol_hdl_dut_pcore_dut.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\basicquadrotorcontrol_hdl_dut_pcore_axi_lite_module.vhd')">hdl\vhdl\basicquadrotorcontrol_hdl_dut_pcore_axi_lite_module.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\basicquadrotorcontrol_hdl_dut_pcore_addr_decoder.vhd')">hdl\vhdl\basicquadrotorcontrol_hdl_dut_pcore_addr_decoder.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\basicquadrotorcontrol_hdl_dut_pcore_axi_lite.vhd')">hdl\vhdl\basicquadrotorcontrol_hdl_dut_pcore_axi_lite.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\hdl\vhdl\basicquadrotorcontrol_hdl_dut_pcore.vhd')">hdl\vhdl\basicquadrotorcontrol_hdl_dut_pcore.vhd</a>
+<br/>
+<br/>
+<b>IP core C header file</b>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\basicquadrotorcontrol_hdl_dut_pcore_v1_00_a\include\basicquadrotorcontrol_hdl_dut_pcore_addr.h')">include\basicquadrotorcontrol_hdl_dut_pcore_addr.h</a>
+</div>
+</body>
+</html>

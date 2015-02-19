@@ -12,15 +12,15 @@ initVars = who;
 
 % Variants Conditions
 Variants.Command = 0;
-Variants.Sensors = 1;
+Variants.Sensors = 0;
 Variants.Environment = 0;
 Variants.Vehicle = 1;
 Variants.Visualization = 0;
-Variants.Actuators = 0;
+Variants.Actuators = 3;
 
 % Add enum structure for the Variants
  Simulink.defineIntEnumType('Variants',{'Command','Vehicle','Environment',...
-     'Sensors','Visualization','Actuators'},[0;1;1;1;0;0]);
+     'Sensors','Visualization','Actuators'},[0;0;0;0;0;0]);
  
 % Bus definitions 
 asbBusDefinitionCommand; 
@@ -29,15 +29,20 @@ asbBusDefinitionEnvironment;
 asbBusDefinitionStates;
 
 % Sampling rate
-Ts= 0.2;
+Ts= 0.01;
 
 % Mass properties
-mass = 1;
-inertia = eye(3);
+mass = 0.078;
+inertia = 1.0e-03*[0.3523 0.0001 0;... 
+                   0.0001 0.3522 0;...
+                   0      0 0.6788];
+
+% Geometric properties
+thrustArm = 0.10795;
 
 % Initial contitions
 initDate = [2013 1 1 0 0 0];
-initPosLLA = [37.628738616666666 -1.223933911333333e+02 100];
+initPosLLA = [0 0 100];
 initPosNED = [0 0 -100];
 initVb = [0 0 0];
 initEuler = [0 0 0];

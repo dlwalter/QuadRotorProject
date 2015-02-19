@@ -1,0 +1,8 @@
+INTSTYLE=pa
+INFILE=C:\Projects\Quadcopter\BasicQuadrotor\hdl_prj\pa_prj\pa_prj.runs\impl_1\system_stub_routed.ncd
+OUTFILE=C:\Projects\Quadcopter\BasicQuadrotor\hdl_prj\pa_prj\pa_prj.runs\impl_1\system_stub.bit
+FAMILY=Zynq
+PART=xc7z020-1clg484
+WORKINGDIR=C:\Projects\Quadcopter\BasicQuadrotor\hdl_prj\pa_prj\pa_prj.runs\impl_1
+LICENSE=WebPack
+USER_INFO=210996363_0_0_752
