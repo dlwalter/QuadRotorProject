@@ -2,7 +2,7 @@
 ##
 ##  Xilinx, Inc. 2006            www.xilinx.com
 ############################################################################
-##  File name :       C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/implementation/ps7_0_wrapper/ps7_0.xdc
+##  File name :       C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/implementation/ps7_0_wrapper/ps7_0.xdc
 ##
 ##  Details :     Constraints file
 ##                    FPGA family:       zynq

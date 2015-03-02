@@ -1,6 +1,6 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:\Projects\Quadcopter\BasicQuadrotor\hdl_prj\edk_prj\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to C:\Projects\QuadRotorProject\dut_models\hdl_prj\edk_prj\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_basicquadrotorcontrol_hdl_dut_pcore_0_wrapper_xst.prj"
-Verilog Include Directory          : {"C:\Projects\Quadcopter\BasicQuadrotor\hdl_prj\edk_prj\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Projects\QuadRotorProject\dut_models\hdl_prj\edk_prj\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc7z020clg484-1
@@ -62,75 +62,75 @@ Cores Search Directories           : {./}
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut_pkg.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut_pkg.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing package <hdl_dut_pkg>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Control_Signals.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Control_Signals.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <Control_Signals>.
 Parsing architecture <rtl> of entity <control_signals>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/rising_edge_detect.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/rising_edge_detect.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <rising_edge_detect>.
 Parsing architecture <rtl> of entity <rising_edge_detect>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/shiftRegister_48.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/shiftRegister_48.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <shiftRegister_48>.
 Parsing architecture <rtl> of entity <shiftregister_48>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/XYZ_shiftRegister.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/XYZ_shiftRegister.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <XYZ_shiftRegister>.
 Parsing architecture <rtl> of entity <xyz_shiftregister>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Read_X_Y_Z.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Read_X_Y_Z.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <Read_X_Y_Z>.
 Parsing architecture <rtl> of entity <read_x_y_z>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Write.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Write.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <Write>.
 Parsing architecture <rtl> of entity <write>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/ADXL345_read.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/ADXL345_read.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <ADXL345_read>.
 Parsing architecture <rtl> of entity <adxl345_read>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <Calculate_f_coeff>.
 Parsing architecture <rtl> of entity <calculate_f_coeff>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Chart.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Chart.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <Chart>.
 Parsing architecture <rtl> of entity <chart>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor1.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor1.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <PWM_Motor1>.
 Parsing architecture <rtl> of entity <pwm_motor1>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff_block.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff_block.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <Calculate_f_coeff_block>.
 Parsing architecture <rtl> of entity <calculate_f_coeff_block>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor2.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor2.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <PWM_Motor2>.
 Parsing architecture <rtl> of entity <pwm_motor2>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff_block1.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff_block1.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <Calculate_f_coeff_block1>.
 Parsing architecture <rtl> of entity <calculate_f_coeff_block1>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor3.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor3.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <PWM_Motor3>.
 Parsing architecture <rtl> of entity <pwm_motor3>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff_block2.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff_block2.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <Calculate_f_coeff_block2>.
 Parsing architecture <rtl> of entity <calculate_f_coeff_block2>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor4.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor4.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <PWM_Motor4>.
 Parsing architecture <rtl> of entity <pwm_motor4>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <hdl_dut>.
 Parsing architecture <rtl> of entity <hdl_dut>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_dut.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_dut.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <basicquadrotorcontrol_hdl_dut_pcore_dut>.
 Parsing architecture <rtl> of entity <basicquadrotorcontrol_hdl_dut_pcore_dut>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_axi_lite_module.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_axi_lite_module.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <basicquadrotorcontrol_hdl_dut_pcore_axi_lite_module>.
 Parsing architecture <rtl> of entity <basicquadrotorcontrol_hdl_dut_pcore_axi_lite_module>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_addr_decoder.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_addr_decoder.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <basicquadrotorcontrol_hdl_dut_pcore_addr_decoder>.
 Parsing architecture <rtl> of entity <basicquadrotorcontrol_hdl_dut_pcore_addr_decoder>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_axi_lite.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_axi_lite.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <basicquadrotorcontrol_hdl_dut_pcore_axi_lite>.
 Parsing architecture <rtl> of entity <basicquadrotorcontrol_hdl_dut_pcore_axi_lite>.
-Parsing VHDL file "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
+Parsing VHDL file "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore.vhd" into library basicquadrotorcontrol_hdl_dut_pcore_v1_00_a
 Parsing entity <basicquadrotorcontrol_hdl_dut_pcore>.
 Parsing architecture <rtl> of entity <basicquadrotorcontrol_hdl_dut_pcore>.
-Parsing VHDL file "C:\Projects\Quadcopter\BasicQuadrotor\hdl_prj\edk_prj\synthesis\parallel_run\hdl\system_basicquadrotorcontrol_hdl_dut_pcore_0_wrapper.vhd" into library work
+Parsing VHDL file "C:\Projects\QuadRotorProject\dut_models\hdl_prj\edk_prj\synthesis\parallel_run\hdl\system_basicquadrotorcontrol_hdl_dut_pcore_0_wrapper.vhd" into library work
 Parsing entity <system_basicquadrotorcontrol_hdl_dut_pcore_0_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_basicquadrotorcontrol_hdl_dut_pcore_0_wrapper>.
 
@@ -189,26 +189,26 @@ Elaborating entity <Calculate_f_coeff_block2> (architecture <rtl>) from library 
 =========================================================================
 
 Synthesizing Unit <system_basicquadrotorcontrol_hdl_dut_pcore_0_wrapper>.
-    Related source file is "C:\Projects\Quadcopter\BasicQuadrotor\hdl_prj\edk_prj\synthesis\parallel_run\hdl\system_basicquadrotorcontrol_hdl_dut_pcore_0_wrapper.vhd".
+    Related source file is "C:\Projects\QuadRotorProject\dut_models\hdl_prj\edk_prj\synthesis\parallel_run\hdl\system_basicquadrotorcontrol_hdl_dut_pcore_0_wrapper.vhd".
     Summary:
 	no macro.
 Unit <system_basicquadrotorcontrol_hdl_dut_pcore_0_wrapper> synthesized.
 
 Synthesizing Unit <basicquadrotorcontrol_hdl_dut_pcore>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore.vhd".
-INFO:Xst:3210 - "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore.vhd" line 212: Output port <ce_out> of the instance <u_basicquadrotorcontrol_hdl_dut_pcore_dut_inst> is unconnected or connected to loadless signal.
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore.vhd".
+INFO:Xst:3210 - "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore.vhd" line 212: Output port <ce_out> of the instance <u_basicquadrotorcontrol_hdl_dut_pcore_dut_inst> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <basicquadrotorcontrol_hdl_dut_pcore> synthesized.
 
 Synthesizing Unit <basicquadrotorcontrol_hdl_dut_pcore_axi_lite>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_axi_lite.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_axi_lite.vhd".
     Summary:
 	no macro.
 Unit <basicquadrotorcontrol_hdl_dut_pcore_axi_lite> synthesized.
 
 Synthesizing Unit <basicquadrotorcontrol_hdl_dut_pcore_addr_decoder>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_addr_decoder.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_addr_decoder.vhd".
 WARNING:Xst:647 - Input <rd_enb> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <write_reg_axi_enable>.
     Found 16-bit register for signal <read_reg_Y>.
@@ -264,7 +264,7 @@ WARNING:Xst:647 - Input <rd_enb> is never used. This port will be preserved and 
 Unit <basicquadrotorcontrol_hdl_dut_pcore_addr_decoder> synthesized.
 
 Synthesizing Unit <basicquadrotorcontrol_hdl_dut_pcore_axi_lite_module>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_axi_lite_module.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_axi_lite_module.vhd".
 WARNING:Xst:647 - Input <AXI4_Lite_WSTRB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 8-bit register for signal <axi_lite_rstate>.
     Found 8-bit register for signal <axi_lite_wstate>.
@@ -306,23 +306,23 @@ WARNING:Xst:647 - Input <AXI4_Lite_WSTRB> is never used. This port will be prese
 Unit <basicquadrotorcontrol_hdl_dut_pcore_axi_lite_module> synthesized.
 
 Synthesizing Unit <basicquadrotorcontrol_hdl_dut_pcore_dut>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_dut.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore_dut.vhd".
     Summary:
 	no macro.
 Unit <basicquadrotorcontrol_hdl_dut_pcore_dut> synthesized.
 
 Synthesizing Unit <hdl_dut>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd".
-INFO:Xst:3210 - "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd" line 206: Output port <DIR_1> of the instance <u_PWM_Motor1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd" line 218: Output port <DIR_1> of the instance <u_PWM_Motor2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd" line 230: Output port <DIR_1> of the instance <u_PWM_Motor3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd" line 242: Output port <DIR_1> of the instance <u_PWM_Motor4> is unconnected or connected to loadless signal.
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd".
+INFO:Xst:3210 - "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd" line 206: Output port <DIR_1> of the instance <u_PWM_Motor1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd" line 218: Output port <DIR_1> of the instance <u_PWM_Motor2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd" line 230: Output port <DIR_1> of the instance <u_PWM_Motor3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd" line 242: Output port <DIR_1> of the instance <u_PWM_Motor4> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <hdl_dut> synthesized.
 
 Synthesizing Unit <ADXL345_read>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/ADXL345_read.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/ADXL345_read.vhd".
     Found 16-bit register for signal <Unit_Delay_Enabled1_out1>.
     Found 16-bit register for signal <Unit_Delay_Enabled2_out1>.
     Found 16-bit register for signal <Unit_Delay_Enabled3_out1>.
@@ -336,7 +336,7 @@ Synthesizing Unit <ADXL345_read>.
 Unit <ADXL345_read> synthesized.
 
 Synthesizing Unit <Write>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Write.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Write.vhd".
     Found 1-bit register for signal <SCK_reg>.
     Found 1-bit register for signal <SDI_reg>.
     Found 1-bit register for signal <CSn_CONV_reg>.
@@ -369,7 +369,7 @@ Synthesizing Unit <Write>.
 Unit <Write> synthesized.
 
 Synthesizing Unit <Read_X_Y_Z>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Read_X_Y_Z.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Read_X_Y_Z.vhd".
     Found 1-bit register for signal <SCK_reg>.
     Found 1-bit register for signal <SDI_reg>.
     Found 1-bit register for signal <XYZ_Valid_reg>.
@@ -403,7 +403,7 @@ Synthesizing Unit <Read_X_Y_Z>.
 Unit <Read_X_Y_Z> synthesized.
 
 Synthesizing Unit <Control_Signals>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Control_Signals.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Control_Signals.vhd".
     Found 1-bit register for signal <Unit_Delay_Enabled_Resettable_zero_delay>.
     Found 1-bit register for signal <Unit_Delay_Enabled_Resettable_switch_delay>.
     Summary:
@@ -412,20 +412,20 @@ Synthesizing Unit <Control_Signals>.
 Unit <Control_Signals> synthesized.
 
 Synthesizing Unit <XYZ_shiftRegister>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/XYZ_shiftRegister.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/XYZ_shiftRegister.vhd".
     Summary:
 	no macro.
 Unit <XYZ_shiftRegister> synthesized.
 
 Synthesizing Unit <rising_edge_detect>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/rising_edge_detect.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/rising_edge_detect.vhd".
     Found 1-bit register for signal <Unit_Delay1_out1>.
     Summary:
 	inferred   1 D-type flip-flop(s).
 Unit <rising_edge_detect> synthesized.
 
 Synthesizing Unit <shiftRegister_48>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/shiftRegister_48.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/shiftRegister_48.vhd".
     Found 48-bit register for signal <XYZ_int>.
     Summary:
 	inferred  48 D-type flip-flop(s).
@@ -433,13 +433,13 @@ Synthesizing Unit <shiftRegister_48>.
 Unit <shiftRegister_48> synthesized.
 
 Synthesizing Unit <PWM_Motor1>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor1.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor1.vhd".
     Summary:
 	no macro.
 Unit <PWM_Motor1> synthesized.
 
 Synthesizing Unit <Calculate_f_coeff>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff.vhd".
     Found 32-bit adder for signal <Sum_out1> created at line 69.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -555,7 +555,7 @@ Synthesizing Unit <div_33u_32u>.
 Unit <div_33u_32u> synthesized.
 
 Synthesizing Unit <Chart>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Chart.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Chart.vhd".
     Found 2-bit register for signal <is_Chart>.
     Found 16-bit register for signal <count>.
     Found 1-bit register for signal <PWM_reg>.
@@ -592,13 +592,13 @@ Synthesizing Unit <Chart>.
 Unit <Chart> synthesized.
 
 Synthesizing Unit <PWM_Motor2>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor2.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor2.vhd".
     Summary:
 	no macro.
 Unit <PWM_Motor2> synthesized.
 
 Synthesizing Unit <Calculate_f_coeff_block>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff_block.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff_block.vhd".
     Found 32-bit adder for signal <Sum_out1> created at line 69.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -606,13 +606,13 @@ Synthesizing Unit <Calculate_f_coeff_block>.
 Unit <Calculate_f_coeff_block> synthesized.
 
 Synthesizing Unit <PWM_Motor3>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor3.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor3.vhd".
     Summary:
 	no macro.
 Unit <PWM_Motor3> synthesized.
 
 Synthesizing Unit <Calculate_f_coeff_block1>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff_block1.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff_block1.vhd".
     Found 32-bit adder for signal <Sum_out1> created at line 69.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -620,13 +620,13 @@ Synthesizing Unit <Calculate_f_coeff_block1>.
 Unit <Calculate_f_coeff_block1> synthesized.
 
 Synthesizing Unit <PWM_Motor4>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor4.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/PWM_Motor4.vhd".
     Summary:
 	no macro.
 Unit <PWM_Motor4> synthesized.
 
 Synthesizing Unit <Calculate_f_coeff_block2>.
-    Related source file is "C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff_block2.vhd".
+    Related source file is "C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/Calculate_f_coeff_block2.vhd".
     Found 32-bit adder for signal <Sum_out1> created at line 69.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -1246,12 +1246,12 @@ IPCORE_CLK     |    2.926|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 39.00 secs
-Total CPU time to Xst completion: 38.56 secs
+Total REAL time to Xst completion: 37.00 secs
+Total CPU time to Xst completion: 37.49 secs
  
 --> 
 
-Total memory usage is 489964 kilobytes
+Total memory usage is 489740 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   33 (   0 filtered)

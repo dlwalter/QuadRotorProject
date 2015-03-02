@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore.vhd</arg>&quot; line <arg fmt="%s" index="2">212</arg>: Output port &lt;<arg fmt="%s" index="3">ce_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_basicquadrotorcontrol_hdl_dut_pcore_dut_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/basicquadrotorcontrol_hdl_dut_pcore.vhd</arg>&quot; line <arg fmt="%s" index="2">212</arg>: Output port &lt;<arg fmt="%s" index="3">ce_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_basicquadrotorcontrol_hdl_dut_pcore_dut_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rd_enb</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -14,16 +14,16 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">AXI4_Lite_WSTRB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd</arg>&quot; line <arg fmt="%s" index="2">206</arg>: Output port &lt;<arg fmt="%s" index="3">DIR_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_PWM_Motor1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd</arg>&quot; line <arg fmt="%s" index="2">206</arg>: Output port &lt;<arg fmt="%s" index="3">DIR_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_PWM_Motor1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd</arg>&quot; line <arg fmt="%s" index="2">218</arg>: Output port &lt;<arg fmt="%s" index="3">DIR_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_PWM_Motor2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd</arg>&quot; line <arg fmt="%s" index="2">218</arg>: Output port &lt;<arg fmt="%s" index="3">DIR_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_PWM_Motor2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd</arg>&quot; line <arg fmt="%s" index="2">230</arg>: Output port &lt;<arg fmt="%s" index="3">DIR_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_PWM_Motor3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd</arg>&quot; line <arg fmt="%s" index="2">230</arg>: Output port &lt;<arg fmt="%s" index="3">DIR_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_PWM_Motor3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd</arg>&quot; line <arg fmt="%s" index="2">242</arg>: Output port &lt;<arg fmt="%s" index="3">DIR_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_PWM_Motor4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Projects/QuadRotorProject/dut_models/hdl_prj/edk_prj/pcores/basicquadrotorcontrol_hdl_dut_pcore_v1_00_a/hdl/vhdl/hdl_dut.vhd</arg>&quot; line <arg fmt="%s" index="2">242</arg>: Output port &lt;<arg fmt="%s" index="3">DIR_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_PWM_Motor4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">waddr_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">basicquadrotorcontrol_hdl_dut_pcore_axi_lite_module</arg>&gt;.

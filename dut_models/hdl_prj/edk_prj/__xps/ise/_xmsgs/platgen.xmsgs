@@ -5,16 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE: <arg fmt="%s" index="2">ps7_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">C:\Projects\Quadcopter\BasicQuadrotor\hdl_prj\edk_prj\system.mhs line 31</arg> 
+<msg type="warning" file="EDK" num="4092" delta="new" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE: <arg fmt="%s" index="2">ps7_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">C:\Projects\QuadRotorProject\dut_models\hdl_prj\edk_prj\system.mhs line 31</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">clock_generator</arg>, INSTANCE: <arg fmt="%s" index="2">clock_generator_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">C:\Projects\Quadcopter\BasicQuadrotor\hdl_prj\edk_prj\system.mhs line 137</arg> 
+<msg type="warning" file="EDK" num="4092" delta="new" >IPNAME: <arg fmt="%s" index="1">clock_generator</arg>, INSTANCE: <arg fmt="%s" index="2">clock_generator_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">C:\Projects\QuadRotorProject\dut_models\hdl_prj\edk_prj\system.mhs line 137</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE: <arg fmt="%s" index="2">ps7_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">C:\Projects\Quadcopter\BasicQuadrotor\hdl_prj\edk_prj\system.mhs line 31</arg> 
+<msg type="warning" file="EDK" num="4092" delta="new" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE: <arg fmt="%s" index="2">ps7_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">C:\Projects\QuadRotorProject\dut_models\hdl_prj\edk_prj\system.mhs line 31</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4092" delta="old" >IPNAME: <arg fmt="%s" index="1">clock_generator</arg>, INSTANCE: <arg fmt="%s" index="2">clock_generator_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">C:\Projects\Quadcopter\BasicQuadrotor\hdl_prj\edk_prj\system.mhs line 137</arg> 
+<msg type="warning" file="EDK" num="4092" delta="new" >IPNAME: <arg fmt="%s" index="1">clock_generator</arg>, INSTANCE: <arg fmt="%s" index="2">clock_generator_0</arg> - <arg fmt="%s" index="3">Pre-Production</arg> version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">zynq</arg>&apos; - <arg fmt="%s" index="5">C:\Projects\QuadRotorProject\dut_models\hdl_prj\edk_prj\system.mhs line 137</arg> 
 </msg>
 
 <msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE:<arg fmt="%s" index="2">ps7_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_S_AXI_HP0_HIGHADDR</arg> value to <arg fmt="%s" index="6">0x1FFFFFFF</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\processing_system7_v4_02_a\data\processing_system7_v2_1_0.mpd line 300</arg> 
@@ -45,25 +45,25 @@
 <msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">INFO: You can modify the DDR address range accessed by Programmable Logic through the processing_system7 AXI slave interfaces. If MicroBlaze is a master on processing_system7 AXI slave interfaces, please use the top half of the address range (Base Address = 0x10000000; High Address = 0x1FFFFFFF). For all other master, any subset of the DDR address can be used. See Xilinx Answer 47167 for more information.</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE:<arg fmt="%s" index="2">ps7_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_FCLK_CLK1_BUF</arg> value to <arg fmt="%s" index="6">FALSE</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\processing_system7_v4_02_a\data\processing_system7_v2_1_0.mpd line 351</arg> 
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE:<arg fmt="%s" index="2">ps7_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_FCLK_CLK1_BUF</arg> value to <arg fmt="%s" index="6">FALSE</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\processing_system7_v4_02_a\data\processing_system7_v2_1_0.mpd line 351</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE:<arg fmt="%s" index="2">ps7_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_FCLK_CLK2_BUF</arg> value to <arg fmt="%s" index="6">FALSE</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\processing_system7_v4_02_a\data\processing_system7_v2_1_0.mpd line 352</arg> 
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE:<arg fmt="%s" index="2">ps7_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_FCLK_CLK2_BUF</arg> value to <arg fmt="%s" index="6">FALSE</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\processing_system7_v4_02_a\data\processing_system7_v2_1_0.mpd line 352</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE:<arg fmt="%s" index="2">ps7_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_FCLK_CLK3_BUF</arg> value to <arg fmt="%s" index="6">FALSE</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\processing_system7_v4_02_a\data\processing_system7_v2_1_0.mpd line 353</arg> 
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">processing_system7</arg>, INSTANCE:<arg fmt="%s" index="2">ps7_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_FCLK_CLK3_BUF</arg> value to <arg fmt="%s" index="6">FALSE</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\processing_system7_v4_02_a\data\processing_system7_v2_1_0.mpd line 353</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">axi_interconnect</arg>, INSTANCE:<arg fmt="%s" index="2">axi4_lite</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_RANGE_CHECK</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_06_a\data\axi_interconnect_v2_1_0.mpd line 149</arg> 
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_interconnect</arg>, INSTANCE:<arg fmt="%s" index="2">axi4_lite</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_RANGE_CHECK</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_06_a\data\axi_interconnect_v2_1_0.mpd line 149</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="4211" delta="new" >The following instances are synthesized with <arg fmt="%s" index="1">XST</arg>. The MPD option IMP_NETLIST=TRUE indicates that a NGC file is to be produced using <arg fmt="%s" index="2">XST</arg> synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+<msg type="info" file="EDK" num="4211" delta="old" >The following instances are synthesized with <arg fmt="%s" index="1">XST</arg>. The MPD option IMP_NETLIST=TRUE indicates that a NGC file is to be produced using <arg fmt="%s" index="2">XST</arg> synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
 </msg>
 
-<msg type="info" file="EDK" num="4194" delta="new" >Running <arg fmt="%s" index="1">XST</arg> parallelly on <arg fmt="%s" index="2">4</arg> processors
+<msg type="info" file="EDK" num="4194" delta="old" >Running <arg fmt="%s" index="1">XST</arg> parallelly on <arg fmt="%s" index="2">4</arg> processors
 </msg>
 
-<msg type="info" file="EDK" num="3509" delta="new" >NCF files should not be modified as they will be regenerated.
+<msg type="info" file="EDK" num="3509" delta="old" >NCF files should not be modified as they will be regenerated.
 If any constraint needs to be overridden, this should be done by modifying the data/<arg fmt="%s" index="1">system</arg>.ucf file.
 </msg>
 

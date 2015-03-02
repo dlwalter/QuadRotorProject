@@ -1,4 +1,4 @@
-set -tmpdir C:\Projects\Quadcopter\BasicQuadrotor\hdl_prj\edk_prj\synthesis\xst_temp_dir\
+set -tmpdir C:\Projects\QuadRotorProject\dut_models\hdl_prj\edk_prj\synthesis\xst_temp_dir\
 run
 -opt_mode speed
 -netlist_hierarchy as_optimized
@@ -11,4 +11,4 @@ run
 -hierarchy_separator /
 -iobuf NO
 -sd {./}
--vlgincdir {"C:\Projects\Quadcopter\BasicQuadrotor\hdl_prj\edk_prj\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+-vlgincdir {"C:\Projects\QuadRotorProject\dut_models\hdl_prj\edk_prj\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
