@@ -1,9 +1,0 @@
-#-----------------------------------------------------------
-# PlanAhead v14.7 (64-bit)
-# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
-# Start of session at: Wed Feb 18 16:12:54 2015
-# Process ID: 5460
-# Log file: C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/pa_prj/planAhead.log
-# Journal file: C:/Projects/Quadcopter/BasicQuadrotor/hdl_prj/pa_prj\planAhead.jou
-#-----------------------------------------------------------
-source pa_create_proj.tcl

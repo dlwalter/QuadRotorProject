@@ -70,13 +70,25 @@ PROD_ID = uint16(hex2dec('7E00'));
 %DATA_FORMAT =  uint16(hex2dec('3108'));
 %POWER_ON =  uint16(hex2dec('2D08'));
 
-
 % you can add any number of initialization commands here
 %INIT_CMDS = [POWER_ON, POWER_ON, POWER_ON, DATA_FORMAT, DATA_FORMAT, DATA_FORMAT,READ_CMD];
-
 %INIT_CMDS = [PAGE_3, DEC_RATE_984a, DEC_RATE_984b, PAGE_0, PROD_ID, Z_ACCL_OUT];
-INIT_CMDS = [PROD_ID];
 
+%% L3G4200D Registers
+
+CTRL_REG1 = uint16(hex2dec('20CF')); 
+% configures sensor to 800 S/s, 32hz LPF Power on, X,Y,Z enabled
+
+OUT_X_L = uint16(hex2dec('A800'));
+OUT_X_H = uint16(hex2dec('A900'));
+OUT_Y_L = uint16(hex2dec('AA00'));
+OUT_Y_H = uint16(hex2dec('AB00'));
+OUT_Z_L = uint16(hex2dec('AC00'));
+OUT_Z_H = uint16(hex2dec('AD00'));
+WHO_AM_I = uint16(hex2dec('8F00'));
+
+init_cmd = CTRL_REG1;
+read_table = [OUT_X_L, OUT_X_H, OUT_Y_L, OUT_Y_H, OUT_Z_L, OUT_Z_H, WHO_AM_I];
 
 
 % Register variables after the project is loaded and store the variables in

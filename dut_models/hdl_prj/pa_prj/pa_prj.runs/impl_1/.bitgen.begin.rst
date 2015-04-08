@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="bitgen" Owner="dlwalter" Host="MACLAB-3" Pid="7252">
-    </Process>
-</ProcessHandle>
