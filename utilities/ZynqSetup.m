@@ -1,5 +1,4 @@
-hdlsetuptoolpath('ToolName', 'Xilinx ISE', 'ToolPath', 'C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\ise.exe')
-%%
+hdlsetuptoolpath('ToolName', 'Xilinx Vivado', 'ToolPath', 'C:\Xilinx\Vivado\2014.4\bin\vivado.bat')
 %xmakefilesetup  %run once
 %%
 h = zynq();
