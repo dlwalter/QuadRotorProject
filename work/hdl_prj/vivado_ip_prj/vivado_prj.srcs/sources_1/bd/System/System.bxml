@@ -38,8 +38,8 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\System_L3G4200D_SPI_hdl_dut_ipcore_0_0\System_L3G4200D_SPI_hdl_dut_ipcore_0_0.xci" Type="IP">
-        <Instance HierarchyPath="L3G4200D_SPI_hdl_dut_ipcore_0"/>
+      <File Name="ip\System_BasicQuadrotorControl_hdl_dut_ipcore_0_0\System_BasicQuadrotorControl_hdl_dut_ipcore_0_0.xci" Type="IP">
+        <Instance HierarchyPath="BasicQuadrotorControl_hdl_dut_ipcore_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

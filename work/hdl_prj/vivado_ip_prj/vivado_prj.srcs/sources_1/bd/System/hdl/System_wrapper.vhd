@@ -1,8 +1,8 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
---Date        : Tue Apr 14 21:32:33 2015
---Host        : variable running 64-bit major release  (build 9200)
+--Date        : Wed Apr 22 15:03:16 2015
+--Host        : maclab-3 running 64-bit major release  (build 9200)
 --Command     : generate_target System_wrapper.bd
 --Design      : System_wrapper
 --Purpose     : IP block netlist
@@ -13,7 +13,8 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity System_wrapper is
   port (
-    CS_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    CS_accl_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    CS_gyro_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
     DDR_addr : inout STD_LOGIC_VECTOR ( 14 downto 0 );
     DDR_ba : inout STD_LOGIC_VECTOR ( 2 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
@@ -35,9 +36,16 @@ entity System_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    SCLK_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
-    SDI_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
-    SDO_pin : in STD_LOGIC_VECTOR ( 0 to 0 )
+    PWM_motor1_1_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    PWM_motor2_1_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    PWM_motor3_1_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    PWM_motor4_1_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SCLK_gyro_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SCL_accl_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SDA_accl_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SDA_gyro_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SDO_accl_pin : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SDO_gyro_pin : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
 end System_wrapper;
 
@@ -65,16 +73,25 @@ architecture STRUCTURE of System_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    SDO_pin : in STD_LOGIC_VECTOR ( 0 to 0 );
-    SCLK_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
-    CS_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
-    SDI_pin : out STD_LOGIC_VECTOR ( 0 to 0 )
+    SDO_accl_pin : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SDO_gyro_pin : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SCL_accl_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    CS_accl_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SDA_accl_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SCLK_gyro_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    CS_gyro_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SDA_gyro_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    PWM_motor1_1_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    PWM_motor2_1_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    PWM_motor3_1_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    PWM_motor4_1_pin : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component System;
 begin
 System_i: component System
     port map (
-      CS_pin(0) => CS_pin(0),
+      CS_accl_pin(0) => CS_accl_pin(0),
+      CS_gyro_pin(0) => CS_gyro_pin(0),
       DDR_addr(14 downto 0) => DDR_addr(14 downto 0),
       DDR_ba(2 downto 0) => DDR_ba(2 downto 0),
       DDR_cas_n => DDR_cas_n,
@@ -96,8 +113,15 @@ System_i: component System
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
-      SCLK_pin(0) => SCLK_pin(0),
-      SDI_pin(0) => SDI_pin(0),
-      SDO_pin(0) => SDO_pin(0)
+      PWM_motor1_1_pin(0) => PWM_motor1_1_pin(0),
+      PWM_motor2_1_pin(0) => PWM_motor2_1_pin(0),
+      PWM_motor3_1_pin(0) => PWM_motor3_1_pin(0),
+      PWM_motor4_1_pin(0) => PWM_motor4_1_pin(0),
+      SCLK_gyro_pin(0) => SCLK_gyro_pin(0),
+      SCL_accl_pin(0) => SCL_accl_pin(0),
+      SDA_accl_pin(0) => SDA_accl_pin(0),
+      SDA_gyro_pin(0) => SDA_gyro_pin(0),
+      SDO_accl_pin(0) => SDO_accl_pin(0),
+      SDO_gyro_pin(0) => SDO_gyro_pin(0)
     );
 end STRUCTURE;

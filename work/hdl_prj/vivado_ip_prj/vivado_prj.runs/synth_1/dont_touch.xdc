@@ -18,8 +18,8 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==System_proc_sys
 # IP: bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==System_processing_system7_0_0 || ORIG_REF_NAME==System_processing_system7_0_0}]
 
-# IP: bd/System/ip/System_L3G4200D_SPI_hdl_dut_ipcore_0_0/System_L3G4200D_SPI_hdl_dut_ipcore_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==System_L3G4200D_SPI_hdl_dut_ipcore_0_0 || ORIG_REF_NAME==System_L3G4200D_SPI_hdl_dut_ipcore_0_0}]
+# IP: bd/System/ip/System_BasicQuadrotorControl_hdl_dut_ipcore_0_0/System_BasicQuadrotorControl_hdl_dut_ipcore_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==System_BasicQuadrotorControl_hdl_dut_ipcore_0_0 || ORIG_REF_NAME==System_BasicQuadrotorControl_hdl_dut_ipcore_0_0}]
 
 # IP: bd/System/ip/System_auto_pc_0/System_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==System_auto_pc_0 || ORIG_REF_NAME==System_auto_pc_0}]

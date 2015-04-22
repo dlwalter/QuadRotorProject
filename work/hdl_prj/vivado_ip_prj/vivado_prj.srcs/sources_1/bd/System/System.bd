@@ -36,7 +36,7 @@
       </spirit:views>
       <spirit:ports>
         <spirit:port>
-          <spirit:name>SDO_pin</spirit:name>
+          <spirit:name>SDO_accl_pin</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
             <spirit:vector>
@@ -46,7 +46,17 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>SCLK_pin</spirit:name>
+          <spirit:name>SDO_gyro_pin</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>0</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>SCL_accl_pin</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
             <spirit:vector>
@@ -56,7 +66,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>CS_pin</spirit:name>
+          <spirit:name>CS_accl_pin</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
             <spirit:vector>
@@ -66,7 +76,77 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>SDI_pin</spirit:name>
+          <spirit:name>SDA_accl_pin</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>0</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>SCLK_gyro_pin</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>0</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>CS_gyro_pin</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>0</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>SDA_gyro_pin</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>0</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>PWM_motor1_1_pin</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>0</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>PWM_motor2_1_pin</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>0</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>PWM_motor3_1_pin</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>0</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>PWM_motor4_1_pin</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
             <spirit:vector>
@@ -120,10 +200,10 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>L3G4200D_SPI_hdl_dut_ipcore_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="L3G4200D_SPI_hdl_dut_ipcore" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:instanceName>BasicQuadrotorControl_hdl_dut_ipcore_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="BasicQuadrotorControl_hdl_dut_ipcore" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">System_L3G4200D_SPI_hdl_dut_ipcore_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">System_BasicQuadrotorControl_hdl_dut_ipcore_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -135,7 +215,7 @@
       </spirit:interconnection>
       <spirit:interconnection>
         <spirit:name>axi_interconnect_0_M00_AXI</spirit:name>
-        <spirit:activeInterface spirit:busRef="AXI4_Lite" spirit:componentRef="L3G4200D_SPI_hdl_dut_ipcore_0"/>
+        <spirit:activeInterface spirit:busRef="AXI4_Lite" spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0"/>
         <spirit:activeInterface spirit:busRef="M00_AXI" spirit:componentRef="axi_interconnect_0"/>
       </spirit:interconnection>
     </spirit:interconnections>
@@ -148,8 +228,8 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="slowest_sync_clk"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="M_AXI_GP0_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="L3G4200D_SPI_hdl_dut_ipcore_0" spirit:portRef="IPCORE_CLK"/>
-        <spirit:internalPortReference spirit:componentRef="L3G4200D_SPI_hdl_dut_ipcore_0" spirit:portRef="AXI4_Lite_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="IPCORE_CLK"/>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="AXI4_Lite_ACLK"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_wiz_0_locked</spirit:name>
@@ -166,8 +246,8 @@
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="peripheral_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S00_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="L3G4200D_SPI_hdl_dut_ipcore_0" spirit:portRef="IPCORE_RESETN"/>
-        <spirit:internalPortReference spirit:componentRef="L3G4200D_SPI_hdl_dut_ipcore_0" spirit:portRef="AXI4_Lite_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="IPCORE_RESETN"/>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="AXI4_Lite_ARESETN"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_CLK0</spirit:name>
@@ -181,24 +261,64 @@
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="ext_reset_in"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>SDO_pin_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="SDO_pin"/>
-        <spirit:internalPortReference spirit:componentRef="L3G4200D_SPI_hdl_dut_ipcore_0" spirit:portRef="SDO"/>
+        <spirit:name>SDO_accl_pin_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="SDO_accl_pin"/>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="SDO_accl"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>L3G4200D_SPI_hdl_dut_ipcore_0_SCLK</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="L3G4200D_SPI_hdl_dut_ipcore_0" spirit:portRef="SCLK"/>
-        <spirit:externalPortReference spirit:portRef="SCLK_pin"/>
+        <spirit:name>SDO_gyro_pin_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="SDO_gyro_pin"/>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="SDO_gyro"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>L3G4200D_SPI_hdl_dut_ipcore_0_CS</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="L3G4200D_SPI_hdl_dut_ipcore_0" spirit:portRef="CS"/>
-        <spirit:externalPortReference spirit:portRef="CS_pin"/>
+        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_SCL_accl</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="SCL_accl"/>
+        <spirit:externalPortReference spirit:portRef="SCL_accl_pin"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>L3G4200D_SPI_hdl_dut_ipcore_0_SDI</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="L3G4200D_SPI_hdl_dut_ipcore_0" spirit:portRef="SDI"/>
-        <spirit:externalPortReference spirit:portRef="SDI_pin"/>
+        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_CS_accl</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="CS_accl"/>
+        <spirit:externalPortReference spirit:portRef="CS_accl_pin"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_accl</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="SDA_accl"/>
+        <spirit:externalPortReference spirit:portRef="SDA_accl_pin"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_SCLK_gyro</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="SCLK_gyro"/>
+        <spirit:externalPortReference spirit:portRef="SCLK_gyro_pin"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_CS_gyro</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="CS_gyro"/>
+        <spirit:externalPortReference spirit:portRef="CS_gyro_pin"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_gyro</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="SDA_gyro"/>
+        <spirit:externalPortReference spirit:portRef="SDA_gyro_pin"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor1_1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="PWM_motor1_1"/>
+        <spirit:externalPortReference spirit:portRef="PWM_motor1_1_pin"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor2_1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="PWM_motor2_1"/>
+        <spirit:externalPortReference spirit:portRef="PWM_motor2_1_pin"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor3_1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="PWM_motor3_1"/>
+        <spirit:externalPortReference spirit:portRef="PWM_motor3_1_pin"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor4_1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="PWM_motor4_1"/>
+        <spirit:externalPortReference spirit:portRef="PWM_motor4_1_pin"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
@@ -670,8 +790,8 @@
         <spirit:width>32</spirit:width>
         <spirit:segments>
           <spirit:segment>
-            <spirit:name>SEG_L3G4200D_SPI_hdl_dut_ipcore_0_reg0</spirit:name>
-            <spirit:displayName>/L3G4200D_SPI_hdl_dut_ipcore_0/AXI4_Lite/reg0</spirit:displayName>
+            <spirit:name>SEG_BasicQuadrotorControl_hdl_dut_ipcore_0_reg0</spirit:name>
+            <spirit:displayName>/BasicQuadrotorControl_hdl_dut_ipcore_0/AXI4_Lite/reg0</spirit:displayName>
             <spirit:addressOffset>0x40010000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>

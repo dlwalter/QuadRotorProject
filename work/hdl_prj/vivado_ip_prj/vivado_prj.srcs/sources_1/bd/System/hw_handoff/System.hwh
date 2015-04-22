@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr 14 21:32:29 2015" VIVADOVERSION="2014.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 22 15:03:09 2015" VIVADOVERSION="2014.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="System_imp" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -25,35 +25,75 @@
     <PORT DIR="IO" NAME="FIXED_IO_ps_srstb" SIGIS="undef"/>
     <PORT DIR="IO" NAME="FIXED_IO_ps_clk" SIGIS="undef"/>
     <PORT DIR="IO" NAME="FIXED_IO_ps_porb" SIGIS="undef"/>
-    <PORT DIR="I" NAME="SDO_pin" SIGIS="undef" SIGNAME="External_Ports_SDO_pin">
+    <PORT DIR="I" NAME="SDO_accl_pin" SIGIS="undef" SIGNAME="External_Ports_SDO_accl_pin">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="SDO"/>
+        <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="SDO_accl"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="SCLK_pin" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_SCLK">
+    <PORT DIR="I" NAME="SDO_gyro_pin" SIGIS="undef" SIGNAME="External_Ports_SDO_gyro_pin">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="SCLK"/>
+        <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="SDO_gyro"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="CS_pin" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_CS">
+    <PORT DIR="O" NAME="SCL_accl_pin" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_SCL_accl">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="CS"/>
+        <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="SCL_accl"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="SDI_pin" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_SDI">
+    <PORT DIR="O" NAME="CS_accl_pin" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_CS_accl">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="SDI"/>
+        <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="CS_accl"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SDA_accl_pin" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_accl">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="SDA_accl"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SCLK_gyro_pin" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_SCLK_gyro">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="SCLK_gyro"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CS_gyro_pin" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_CS_gyro">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="CS_gyro"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SDA_gyro_pin" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_gyro">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="SDA_gyro"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="PWM_motor1_1_pin" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor1_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="PWM_motor1_1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="PWM_motor2_1_pin" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor2_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="PWM_motor2_1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="PWM_motor3_1_pin" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor3_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="PWM_motor3_1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="PWM_motor4_1_pin" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor4_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="PWM_motor4_1"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
 
   <MODULES>
-    <MODULE FULLNAME="/L3G4200D_SPI_hdl_dut_ipcore_0" HWVERSION="1.0" INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="L3G4200D_SPI_hdl_dut_ipcore" VLNV="xilinx.com:ip:L3G4200D_SPI_hdl_dut_ipcore:1.0">
+    <MODULE FULLNAME="/BasicQuadrotorControl_hdl_dut_ipcore_0" HWVERSION="1.0" INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BasicQuadrotorControl_hdl_dut_ipcore" VLNV="xilinx.com:ip:BasicQuadrotorControl_hdl_dut_ipcore:1.0">
       <DOCUMENTS>
-        <DOCUMENT SOURCE="c:/Projects/QuadRotorProject/work/hdl_prj/vivado_ip_prj/ipcore/L3G4200D_SPI_hdl_dut_ipcore_v1_0/doc/L3G4200D_SPI_ip_core_report.pdf"/>
+        <DOCUMENT SOURCE="c:/Projects/QuadRotorProject/work/hdl_prj/vivado_ip_prj/ipcore/BasicQuadrotorControl_hdl_dut_ipcore_v1_0/doc/BasicQuadrotorControl_ip_core_report.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="System_L3G4200D_SPI_hdl_dut_ipcore_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="System_BasicQuadrotorControl_hdl_dut_ipcore_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_BASEADDR" VALUE="0x40010000"/>
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4001FFFF"/>
@@ -69,9 +109,14 @@
             <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="SDO" SIGIS="undef" SIGNAME="External_Ports_SDO_pin">
+        <PORT DIR="I" NAME="SDO_accl" SIGIS="undef" SIGNAME="External_Ports_SDO_accl_pin">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="SDO_pin"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDO_accl_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SDO_gyro" SIGIS="undef" SIGNAME="External_Ports_SDO_gyro_pin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDO_gyro_pin"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="AXI4_Lite_ACLK" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
@@ -84,102 +129,137 @@
             <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="AXI4_Lite_AWADDR" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_AWADDR">
+        <PORT DIR="I" NAME="AXI4_Lite_AWADDR" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_AWADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="AXI4_Lite_AWVALID" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_AWVALID">
+        <PORT DIR="I" NAME="AXI4_Lite_AWVALID" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_AWVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="AXI4_Lite_WDATA" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_WDATA">
+        <PORT DIR="I" NAME="AXI4_Lite_WDATA" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_WDATA">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="AXI4_Lite_WSTRB" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_WSTRB">
+        <PORT DIR="I" NAME="AXI4_Lite_WSTRB" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_WSTRB">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="AXI4_Lite_WVALID" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_WVALID">
+        <PORT DIR="I" NAME="AXI4_Lite_WVALID" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_WVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="AXI4_Lite_BREADY" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_BREADY">
+        <PORT DIR="I" NAME="AXI4_Lite_BREADY" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_BREADY">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="AXI4_Lite_ARADDR" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_ARADDR">
+        <PORT DIR="I" NAME="AXI4_Lite_ARADDR" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_ARADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="AXI4_Lite_ARVALID" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_ARVALID">
+        <PORT DIR="I" NAME="AXI4_Lite_ARVALID" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_ARVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="AXI4_Lite_RREADY" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_RREADY">
+        <PORT DIR="I" NAME="AXI4_Lite_RREADY" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_RREADY">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="SCLK" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_SCLK">
+        <PORT DIR="O" NAME="SCL_accl" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_SCL_accl">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="SCLK_pin"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="SCL_accl_pin"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="CS" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_CS">
+        <PORT DIR="O" NAME="CS_accl" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_CS_accl">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="CS_pin"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="CS_accl_pin"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="SDI" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_SDI">
+        <PORT DIR="O" NAME="SDA_accl" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_accl">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="SDI_pin"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDA_accl_pin"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="AXI4_Lite_AWREADY" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_AWREADY">
+        <PORT DIR="O" NAME="SCLK_gyro" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_SCLK_gyro">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SCLK_gyro_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CS_gyro" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_CS_gyro">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CS_gyro_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SDA_gyro" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_gyro">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDA_gyro_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PWM_motor1_1" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor1_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="PWM_motor1_1_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PWM_motor2_1" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor2_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="PWM_motor2_1_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PWM_motor3_1" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor3_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="PWM_motor3_1_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PWM_motor4_1" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor4_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="PWM_motor4_1_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AXI4_Lite_AWREADY" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_AWREADY">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="AXI4_Lite_WREADY" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_WREADY">
+        <PORT DIR="O" NAME="AXI4_Lite_WREADY" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_WREADY">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="AXI4_Lite_BRESP" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_BRESP">
+        <PORT DIR="O" NAME="AXI4_Lite_BRESP" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_BRESP">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="AXI4_Lite_BVALID" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_BVALID">
+        <PORT DIR="O" NAME="AXI4_Lite_BVALID" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_BVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="AXI4_Lite_ARREADY" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_ARREADY">
+        <PORT DIR="O" NAME="AXI4_Lite_ARREADY" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_ARREADY">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="AXI4_Lite_RDATA" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_RDATA">
+        <PORT DIR="O" NAME="AXI4_Lite_RDATA" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_RDATA">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="AXI4_Lite_RRESP" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_RRESP">
+        <PORT DIR="O" NAME="AXI4_Lite_RRESP" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_RRESP">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="AXI4_Lite_RVALID" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_RVALID">
+        <PORT DIR="O" NAME="AXI4_Lite_RVALID" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_RVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="m_axi_rvalid"/>
           </CONNECTIONS>
@@ -446,91 +526,91 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_RREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axi_awaddr" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_AWADDR">
+        <PORT DIR="O" NAME="m_axi_awaddr" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_AWADDR">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_AWADDR"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_AWADDR"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axi_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="m_axi_awvalid" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_AWVALID">
+        <PORT DIR="O" NAME="m_axi_awvalid" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_AWVALID">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_AWVALID"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_AWVALID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axi_awready" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_AWREADY">
+        <PORT DIR="I" NAME="m_axi_awready" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_AWREADY">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_AWREADY"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_AWREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axi_wdata" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_WDATA">
+        <PORT DIR="O" NAME="m_axi_wdata" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_WDATA">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_WDATA"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_WDATA"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axi_wstrb" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_WSTRB">
+        <PORT DIR="O" NAME="m_axi_wstrb" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_WSTRB">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_WSTRB"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_WSTRB"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axi_wvalid" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_WVALID">
+        <PORT DIR="O" NAME="m_axi_wvalid" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_WVALID">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_WVALID"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_WVALID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axi_wready" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_WREADY">
+        <PORT DIR="I" NAME="m_axi_wready" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_WREADY">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_WREADY"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_WREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axi_bresp" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_BRESP">
+        <PORT DIR="I" NAME="m_axi_bresp" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_BRESP">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_BRESP"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_BRESP"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axi_bvalid" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_BVALID">
+        <PORT DIR="I" NAME="m_axi_bvalid" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_BVALID">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_BVALID"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_BVALID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axi_bready" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_BREADY">
+        <PORT DIR="O" NAME="m_axi_bready" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_BREADY">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_BREADY"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_BREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axi_araddr" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_ARADDR">
+        <PORT DIR="O" NAME="m_axi_araddr" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_ARADDR">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_ARADDR"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_ARADDR"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axi_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="m_axi_arvalid" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_ARVALID">
+        <PORT DIR="O" NAME="m_axi_arvalid" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_ARVALID">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_ARVALID"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_ARVALID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axi_arready" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_ARREADY">
+        <PORT DIR="I" NAME="m_axi_arready" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_ARREADY">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_ARREADY"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_ARREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axi_rdata" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_RDATA">
+        <PORT DIR="I" NAME="m_axi_rdata" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_RDATA">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_RDATA"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_RDATA"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axi_rresp" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_RRESP">
+        <PORT DIR="I" NAME="m_axi_rresp" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_RRESP">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_RRESP"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_RRESP"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axi_rvalid" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_RVALID">
+        <PORT DIR="I" NAME="m_axi_rvalid" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_RVALID">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_RVALID"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_RVALID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axi_rready" SIGIS="undef" SIGNAME="L3G4200D_SPI_hdl_dut_ipcore_0_AXI4_Lite_RREADY">
+        <PORT DIR="O" NAME="m_axi_rready" SIGIS="undef" SIGNAME="BasicQuadrotorControl_hdl_dut_ipcore_0_AXI4_Lite_RREADY">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_RREADY"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_RREADY"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1013,8 +1093,8 @@
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="aclk"/>
             <CONNECTION INSTANCE="proc_sys_reset_0" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="IPCORE_CLK"/>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_ACLK"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="IPCORE_CLK"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_ACLK"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="resetn" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -1074,8 +1154,8 @@
         <PORT DIR="O" NAME="peripheral_aresetn" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_interconnect_0_s00_couplers_auto_pc" PORT="aresetn"/>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="IPCORE_RESETN"/>
-            <CONNECTION INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" PORT="AXI4_Lite_ARESETN"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="IPCORE_RESETN"/>
+            <CONNECTION INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" PORT="AXI4_Lite_ARESETN"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -3350,7 +3430,7 @@
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0001000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0001FFF" INSTANCE="ps7_uart_1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0002000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0002FFF" INSTANCE="ps7_usb_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xF8007100" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xF8007120" INSTANCE="ps7_xadc_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
-        <MEMRANGE BASENAME="C_BASEADDR" BASEVALUE="0x40010000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4001FFFF" INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MEMTYPE="REGISTER"/>
+        <MEMRANGE BASENAME="C_BASEADDR" BASEVALUE="0x40010000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4001FFFF" INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MEMTYPE="REGISTER"/>
       </MEMORYMAP>
       <PERIPHERALS>
         <PERIPHERAL INSTANCE="ps7_afi_0"/>
@@ -3385,7 +3465,7 @@
         <PERIPHERAL INSTANCE="ps7_uart_1"/>
         <PERIPHERAL INSTANCE="ps7_usb_0"/>
         <PERIPHERAL INSTANCE="ps7_xadc_0"/>
-        <PERIPHERAL INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0"/>
+        <PERIPHERAL INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0"/>
       </PERIPHERALS>
     </MODULE>
     <MODULE HWVERSION="5.2" INSTANCE="ps7_cortexa9_1" IPTYPE="PROCESSOR" IS_ENABLE="1" IS_PL="FALSE" MODCLASS="PROCESSOR" MODTYPE="ps7_cortexa9">
@@ -3575,7 +3655,7 @@
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0001000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0001FFF" INSTANCE="ps7_uart_1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0002000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0002FFF" INSTANCE="ps7_usb_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xF8007100" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xF8007120" INSTANCE="ps7_xadc_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
-        <MEMRANGE BASENAME="C_BASEADDR" BASEVALUE="0x40010000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4001FFFF" INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MEMTYPE="REGISTER"/>
+        <MEMRANGE BASENAME="C_BASEADDR" BASEVALUE="0x40010000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4001FFFF" INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MEMTYPE="REGISTER"/>
       </MEMORYMAP>
       <PERIPHERALS>
         <PERIPHERAL INSTANCE="ps7_afi_0"/>
@@ -3610,7 +3690,7 @@
         <PERIPHERAL INSTANCE="ps7_uart_1"/>
         <PERIPHERAL INSTANCE="ps7_usb_0"/>
         <PERIPHERAL INSTANCE="ps7_xadc_0"/>
-        <PERIPHERAL INSTANCE="L3G4200D_SPI_hdl_dut_ipcore_0"/>
+        <PERIPHERAL INSTANCE="BasicQuadrotorControl_hdl_dut_ipcore_0"/>
       </PERIPHERALS>
     </MODULE>
     <MODULE HWVERSION="1.00.a" INSTANCE="ps7_ddr_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" IS_PL="FALSE" MODCLASS="MEMORY_CNTLR" MODTYPE="ps7_ddr">

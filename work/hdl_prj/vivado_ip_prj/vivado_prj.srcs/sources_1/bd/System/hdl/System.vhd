@@ -1,8 +1,8 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
---Date        : Tue Apr 14 21:32:33 2015
---Host        : variable running 64-bit major release  (build 9200)
+--Date        : Wed Apr 22 15:03:16 2015
+--Host        : maclab-3 running 64-bit major release  (build 9200)
 --Command     : generate_target System.bd
 --Design      : System
 --Purpose     : IP block netlist
@@ -578,7 +578,8 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity System is
   port (
-    CS_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    CS_accl_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    CS_gyro_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
     DDR_addr : inout STD_LOGIC_VECTOR ( 14 downto 0 );
     DDR_ba : inout STD_LOGIC_VECTOR ( 2 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
@@ -600,9 +601,16 @@ entity System is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    SCLK_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
-    SDI_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
-    SDO_pin : in STD_LOGIC_VECTOR ( 0 to 0 )
+    PWM_motor1_1_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    PWM_motor2_1_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    PWM_motor3_1_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    PWM_motor4_1_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SCLK_gyro_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SCL_accl_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SDA_accl_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SDA_gyro_pin : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SDO_accl_pin : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SDO_gyro_pin : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute CORE_GENERATION_INFO : string;
   attribute CORE_GENERATION_INFO of System : entity is "System,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VHDL,numBlks=7,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0}";
@@ -700,11 +708,12 @@ architecture STRUCTURE of System is
     PS_PORB : inout STD_LOGIC
   );
   end component System_processing_system7_0_0;
-  component System_L3G4200D_SPI_hdl_dut_ipcore_0_0 is
+  component System_BasicQuadrotorControl_hdl_dut_ipcore_0_0 is
   port (
     IPCORE_CLK : in STD_LOGIC;
     IPCORE_RESETN : in STD_LOGIC;
-    SDO : in STD_LOGIC;
+    SDO_accl : in STD_LOGIC;
+    SDO_gyro : in STD_LOGIC;
     AXI4_Lite_ACLK : in STD_LOGIC;
     AXI4_Lite_ARESETN : in STD_LOGIC;
     AXI4_Lite_AWADDR : in STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -716,9 +725,16 @@ architecture STRUCTURE of System is
     AXI4_Lite_ARADDR : in STD_LOGIC_VECTOR ( 15 downto 0 );
     AXI4_Lite_ARVALID : in STD_LOGIC;
     AXI4_Lite_RREADY : in STD_LOGIC;
-    SCLK : out STD_LOGIC;
-    CS : out STD_LOGIC;
-    SDI : out STD_LOGIC;
+    SCL_accl : out STD_LOGIC;
+    CS_accl : out STD_LOGIC;
+    SDA_accl : out STD_LOGIC;
+    SCLK_gyro : out STD_LOGIC;
+    CS_gyro : out STD_LOGIC;
+    SDA_gyro : out STD_LOGIC;
+    PWM_motor1_1 : out STD_LOGIC;
+    PWM_motor2_1 : out STD_LOGIC;
+    PWM_motor3_1 : out STD_LOGIC;
+    PWM_motor4_1 : out STD_LOGIC;
     AXI4_Lite_AWREADY : out STD_LOGIC;
     AXI4_Lite_WREADY : out STD_LOGIC;
     AXI4_Lite_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -728,12 +744,20 @@ architecture STRUCTURE of System is
     AXI4_Lite_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
     AXI4_Lite_RVALID : out STD_LOGIC
   );
-  end component System_L3G4200D_SPI_hdl_dut_ipcore_0_0;
+  end component System_BasicQuadrotorControl_hdl_dut_ipcore_0_0;
+  signal BasicQuadrotorControl_hdl_dut_ipcore_0_CS_accl : STD_LOGIC;
+  signal BasicQuadrotorControl_hdl_dut_ipcore_0_CS_gyro : STD_LOGIC;
+  signal BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor1_1 : STD_LOGIC;
+  signal BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor2_1 : STD_LOGIC;
+  signal BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor3_1 : STD_LOGIC;
+  signal BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor4_1 : STD_LOGIC;
+  signal BasicQuadrotorControl_hdl_dut_ipcore_0_SCLK_gyro : STD_LOGIC;
+  signal BasicQuadrotorControl_hdl_dut_ipcore_0_SCL_accl : STD_LOGIC;
+  signal BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_accl : STD_LOGIC;
+  signal BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_gyro : STD_LOGIC;
   signal GND_1 : STD_LOGIC;
-  signal L3G4200D_SPI_hdl_dut_ipcore_0_CS : STD_LOGIC;
-  signal L3G4200D_SPI_hdl_dut_ipcore_0_SCLK : STD_LOGIC;
-  signal L3G4200D_SPI_hdl_dut_ipcore_0_SDI : STD_LOGIC;
-  signal SDO_pin_1 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal SDO_accl_pin_1 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal SDO_gyro_pin_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal VCC_1 : STD_LOGIC;
   signal axi_interconnect_0_M00_AXI_ARADDR : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal axi_interconnect_0_M00_AXI_ARREADY : STD_LOGIC;
@@ -823,15 +847,19 @@ architecture STRUCTURE of System is
   signal NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
 begin
-  CS_pin(0) <= L3G4200D_SPI_hdl_dut_ipcore_0_CS;
-  SCLK_pin(0) <= L3G4200D_SPI_hdl_dut_ipcore_0_SCLK;
-  SDI_pin(0) <= L3G4200D_SPI_hdl_dut_ipcore_0_SDI;
-  SDO_pin_1(0) <= SDO_pin(0);
-GND: unisim.vcomponents.GND
-    port map (
-      G => GND_1
-    );
-L3G4200D_SPI_hdl_dut_ipcore_0: component System_L3G4200D_SPI_hdl_dut_ipcore_0_0
+  CS_accl_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_CS_accl;
+  CS_gyro_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_CS_gyro;
+  PWM_motor1_1_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor1_1;
+  PWM_motor2_1_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor2_1;
+  PWM_motor3_1_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor3_1;
+  PWM_motor4_1_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor4_1;
+  SCLK_gyro_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_SCLK_gyro;
+  SCL_accl_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_SCL_accl;
+  SDA_accl_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_accl;
+  SDA_gyro_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_gyro;
+  SDO_accl_pin_1(0) <= SDO_accl_pin(0);
+  SDO_gyro_pin_1(0) <= SDO_gyro_pin(0);
+BasicQuadrotorControl_hdl_dut_ipcore_0: component System_BasicQuadrotorControl_hdl_dut_ipcore_0_0
     port map (
       AXI4_Lite_ACLK => clk_wiz_0_clk_out1,
       AXI4_Lite_ARADDR(15 downto 0) => axi_interconnect_0_M00_AXI_ARADDR(15 downto 0),
@@ -852,12 +880,24 @@ L3G4200D_SPI_hdl_dut_ipcore_0: component System_L3G4200D_SPI_hdl_dut_ipcore_0_0
       AXI4_Lite_WREADY => axi_interconnect_0_M00_AXI_WREADY,
       AXI4_Lite_WSTRB(3 downto 0) => axi_interconnect_0_M00_AXI_WSTRB(3 downto 0),
       AXI4_Lite_WVALID => axi_interconnect_0_M00_AXI_WVALID,
-      CS => L3G4200D_SPI_hdl_dut_ipcore_0_CS,
+      CS_accl => BasicQuadrotorControl_hdl_dut_ipcore_0_CS_accl,
+      CS_gyro => BasicQuadrotorControl_hdl_dut_ipcore_0_CS_gyro,
       IPCORE_CLK => clk_wiz_0_clk_out1,
       IPCORE_RESETN => proc_sys_reset_0_peripheral_aresetn(0),
-      SCLK => L3G4200D_SPI_hdl_dut_ipcore_0_SCLK,
-      SDI => L3G4200D_SPI_hdl_dut_ipcore_0_SDI,
-      SDO => SDO_pin_1(0)
+      PWM_motor1_1 => BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor1_1,
+      PWM_motor2_1 => BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor2_1,
+      PWM_motor3_1 => BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor3_1,
+      PWM_motor4_1 => BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor4_1,
+      SCLK_gyro => BasicQuadrotorControl_hdl_dut_ipcore_0_SCLK_gyro,
+      SCL_accl => BasicQuadrotorControl_hdl_dut_ipcore_0_SCL_accl,
+      SDA_accl => BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_accl,
+      SDA_gyro => BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_gyro,
+      SDO_accl => SDO_accl_pin_1(0),
+      SDO_gyro => SDO_gyro_pin_1(0)
+    );
+GND: unisim.vcomponents.GND
+    port map (
+      G => GND_1
     );
 VCC: unisim.vcomponents.VCC
     port map (
