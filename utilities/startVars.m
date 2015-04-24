@@ -56,7 +56,7 @@ initAngRates = [0 0 0];
 Ts = 1/1e5;  % Run ARM process at 100KHz
 
 
-conv_accl = 
+%conv_accl = 
 
 
 % Register variables after the project is loaded and store the variables in

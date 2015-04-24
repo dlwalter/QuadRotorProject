@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
-| Date             : Wed Apr 22 15:10:04 2015
+| Date             : Fri Apr 24 07:55:05 2015
 | Host             : maclab-3 running 64-bit major release  (build 9200)
 | Command          : report_power -file System_wrapper_power_routed.rpt -pb System_wrapper_power_summary_routed.pb
 | Design           : System_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.575 |
-| Dynamic (W)              | 1.423 |
+| Total On-Chip Power (W)  | 1.576 |
+| Dynamic (W)              | 1.424 |
 | Device Static (W)        | 0.152 |
 | Total Off-Chip Power (W) | 0.121 |
 | Effective TJA (C/W)      | 11.5  |
@@ -50,21 +50,20 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.008 |        4 |       --- |             --- |
-| Slice Logic             |    <0.001 |     3898 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |     1747 |     53200 |            3.28 |
-|   Register              |    <0.001 |     1282 |    106400 |            1.20 |
-|   CARRY4                |    <0.001 |      140 |     13300 |            1.05 |
-|   Others                |     0.000 |      265 |       --- |             --- |
-|   F7/F8 Muxes           |     0.000 |        2 |     53200 |           <0.01 |
+| Clocks                  |     0.009 |        4 |       --- |             --- |
+| Slice Logic             |    <0.001 |     3819 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |     1699 |     53200 |            3.19 |
+|   Register              |    <0.001 |     1314 |    106400 |            1.23 |
+|   CARRY4                |    <0.001 |      130 |     13300 |            0.97 |
+|   Others                |     0.000 |      259 |       --- |             --- |
 |   LUT as Shift Register |     0.000 |       62 |     17400 |            0.35 |
-| Signals                 |    <0.001 |     3106 |       --- |             --- |
+| Signals                 |    <0.001 |     3211 |       --- |             --- |
 | MMCM                    |     0.106 |        1 |         4 |           25.00 |
 | DSPs                    |     0.000 |        8 |       220 |            3.63 |
 | I/O                     |    <0.001 |       12 |       125 |            9.60 |
 | PS7                     |     1.308 |        1 |       --- |             --- |
 | Static Power            |     0.152 |          |           |                 |
-| Total                   |     1.575 |          |           |                 |
+| Total                   |     1.576 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.024 |       0.010 |      0.014 |
+| Vccint    |       1.000 |     0.025 |       0.011 |      0.014 |
 | Vccaux    |       1.800 |     0.079 |       0.059 |      0.020 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -137,10 +136,10 @@ Table of Contents
 +------------+-----------------------------------------------------------+-----------------+
 | Clock      | Domain                                                    | Constraint (ns) |
 +------------+-----------------------------------------------------------+-----------------+
-| CLKFBOUT   | System_i/clk_wiz_0/U0/CLKFBOUT                            |            10.0 |
 | CLKOUT0    | System_i/clk_wiz_0/U0/CLKOUT0                             |            10.0 |
 | clk_fpga_0 | System_i/processing_system7_0/inst/FCLK_CLK0              |            10.0 |
 | clk_fpga_0 | System_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0] |            10.0 |
+| CLKFBOUT   | System_i/clk_wiz_0/U0/CLKFBOUT                            |            10.0 |
 +------------+-----------------------------------------------------------+-----------------+
 
 
@@ -150,75 +149,74 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-----------------------------------------------------------------------+-----------+
-| Name                                                                  | Power (W) |
-+-----------------------------------------------------------------------+-----------+
-| System_wrapper                                                        |     1.423 |
-|   System_i                                                            |     1.423 |
-|     BasicQuadrotorControl_hdl_dut_ipcore_0                            |     0.004 |
-|       U0                                                              |     0.004 |
-|         u_BasicQuadrotorControl_hdl_dut_ipcore_axi_lite_inst          |     0.001 |
-|           u_BasicQuadrotorControl_hdl_dut_ipcore_addr_decoder_inst    |    <0.001 |
-|           u_BasicQuadrotorControl_hdl_dut_ipcore_axi_lite_module_inst |    <0.001 |
-|         u_BasicQuadrotorControl_hdl_dut_ipcore_dut_inst               |     0.003 |
-|           u_hdl_dut                                                   |     0.003 |
-|             u_PWM_Motor1                                              |    <0.001 |
-|               u_Chart                                                 |    <0.001 |
-|             u_PWM_Motor2                                              |    <0.001 |
-|               u_Chart                                                 |    <0.001 |
-|             u_PWM_Motor3                                              |    <0.001 |
-|               u_Chart                                                 |    <0.001 |
-|             u_PWM_Motor4                                              |    <0.001 |
-|               u_Chart                                                 |    <0.001 |
-|             u_adxl_dut                                                |     0.001 |
-|               u_Counter1                                              |    <0.001 |
-|               u_Counter2                                              |    <0.001 |
-|               u_Counter3                                              |    <0.001 |
-|               u_Detect_Increase1                                      |    <0.001 |
-|               u_Initialized_Check                                     |    <0.001 |
-|               u_Transmit                                              |    <0.001 |
-|             u_l3g_dut                                                 |     0.001 |
-|               u_Counter1                                              |    <0.001 |
-|               u_Counter2                                              |    <0.001 |
-|               u_Counter3                                              |    <0.001 |
-|               u_Detect_Increase1                                      |    <0.001 |
-|               u_Initialized_Check                                     |    <0.001 |
-|               u_Transmit                                              |    <0.001 |
-|     axi_interconnect_0                                                |     0.004 |
-|       s00_couplers                                                    |     0.004 |
-|         auto_pc                                                       |     0.004 |
-|           inst                                                        |     0.004 |
-|             gen_axilite.gen_b2s_conv.axilite_b2s                      |     0.004 |
-|               RD.ar_channel_0                                         |    <0.001 |
-|                 ar_cmd_fsm_0                                          |    <0.001 |
-|                 cmd_translator_0                                      |    <0.001 |
-|                   incr_cmd_0                                          |    <0.001 |
-|                   wrap_cmd_0                                          |    <0.001 |
-|               RD.r_channel_0                                          |    <0.001 |
-|                 rd_data_fifo_0                                        |    <0.001 |
-|                 transaction_fifo_0                                    |    <0.001 |
-|               SI_REG                                                  |     0.002 |
-|                 ar_pipe                                               |    <0.001 |
-|                 aw_pipe                                               |    <0.001 |
-|                 b_pipe                                                |    <0.001 |
-|                 r_pipe                                                |    <0.001 |
-|               WR.aw_channel_0                                         |    <0.001 |
-|                 aw_cmd_fsm_0                                          |    <0.001 |
-|                 cmd_translator_0                                      |    <0.001 |
-|                   incr_cmd_0                                          |    <0.001 |
-|                   wrap_cmd_0                                          |    <0.001 |
-|               WR.b_channel_0                                          |    <0.001 |
-|                 bid_fifo_0                                            |    <0.001 |
-|                 bresp_fifo_0                                          |    <0.001 |
-|     clk_wiz_0                                                         |     0.107 |
-|       U0                                                              |     0.107 |
-|     proc_sys_reset_0                                                  |    <0.001 |
-|       U0                                                              |    <0.001 |
-|         EXT_LPF                                                       |    <0.001 |
-|         SEQ                                                           |    <0.001 |
-|           SEQ_COUNTER                                                 |    <0.001 |
-|     processing_system7_0                                              |     1.309 |
-|       inst                                                            |     1.309 |
-+-----------------------------------------------------------------------+-----------+
++-------------------------------------------------------------------------+-----------+
+| Name                                                                    | Power (W) |
++-------------------------------------------------------------------------+-----------+
+| System_wrapper                                                          |     1.424 |
+|   System_i                                                              |     1.424 |
+|     BasicQuadrotorControlv2_hdl_dut_ipcore_0                            |     0.005 |
+|       U0                                                                |     0.005 |
+|         u_BasicQuadrotorControlv2_hdl_dut_ipcore_axi_lite_inst          |     0.001 |
+|           u_BasicQuadrotorControlv2_hdl_dut_ipcore_addr_decoder_inst    |    <0.001 |
+|           u_BasicQuadrotorControlv2_hdl_dut_ipcore_axi_lite_module_inst |    <0.001 |
+|         u_BasicQuadrotorControlv2_hdl_dut_ipcore_dut_inst               |     0.003 |
+|           u_hdl_dut                                                     |     0.003 |
+|             u_PWM_Motor1                                                |    <0.001 |
+|               u_Chart                                                   |    <0.001 |
+|             u_PWM_Motor2                                                |    <0.001 |
+|               u_Chart                                                   |    <0.001 |
+|             u_PWM_Motor3                                                |    <0.001 |
+|               u_Chart                                                   |    <0.001 |
+|             u_PWM_Motor4                                                |    <0.001 |
+|               u_Chart                                                   |    <0.001 |
+|             u_adxl_dut                                                  |     0.001 |
+|               u_Counter2                                                |    <0.001 |
+|               u_Detect_Increase1                                        |    <0.001 |
+|               u_Initialized_Check                                       |    <0.001 |
+|               u_Separate_MB                                             |    <0.001 |
+|               u_Transmit                                                |    <0.001 |
+|             u_l3g_dut                                                   |     0.002 |
+|               u_Counter1                                                |    <0.001 |
+|               u_Counter2                                                |    <0.001 |
+|               u_Counter3                                                |    <0.001 |
+|               u_Detect_Increase1                                        |    <0.001 |
+|               u_Initialized_Check                                       |    <0.001 |
+|               u_Transmit                                                |    <0.001 |
+|     axi_interconnect_0                                                  |     0.004 |
+|       s00_couplers                                                      |     0.004 |
+|         auto_pc                                                         |     0.004 |
+|           inst                                                          |     0.004 |
+|             gen_axilite.gen_b2s_conv.axilite_b2s                        |     0.004 |
+|               RD.ar_channel_0                                           |    <0.001 |
+|                 ar_cmd_fsm_0                                            |    <0.001 |
+|                 cmd_translator_0                                        |    <0.001 |
+|                   incr_cmd_0                                            |    <0.001 |
+|                   wrap_cmd_0                                            |    <0.001 |
+|               RD.r_channel_0                                            |    <0.001 |
+|                 rd_data_fifo_0                                          |    <0.001 |
+|                 transaction_fifo_0                                      |    <0.001 |
+|               SI_REG                                                    |     0.002 |
+|                 ar_pipe                                                 |    <0.001 |
+|                 aw_pipe                                                 |    <0.001 |
+|                 b_pipe                                                  |    <0.001 |
+|                 r_pipe                                                  |    <0.001 |
+|               WR.aw_channel_0                                           |    <0.001 |
+|                 aw_cmd_fsm_0                                            |    <0.001 |
+|                 cmd_translator_0                                        |    <0.001 |
+|                   incr_cmd_0                                            |    <0.001 |
+|                   wrap_cmd_0                                            |    <0.001 |
+|               WR.b_channel_0                                            |    <0.001 |
+|                 bid_fifo_0                                              |    <0.001 |
+|                 bresp_fifo_0                                            |    <0.001 |
+|     clk_wiz_0                                                           |     0.107 |
+|       U0                                                                |     0.107 |
+|     proc_sys_reset_0                                                    |    <0.001 |
+|       U0                                                                |    <0.001 |
+|         EXT_LPF                                                         |    <0.001 |
+|         SEQ                                                             |    <0.001 |
+|           SEQ_COUNTER                                                   |    <0.001 |
+|     processing_system7_0                                                |     1.309 |
+|       inst                                                              |     1.309 |
++-------------------------------------------------------------------------+-----------+
 
 

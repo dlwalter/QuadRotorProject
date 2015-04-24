@@ -1,9 +1,9 @@
 open_project vivado_prj.xpr
-update_ip_catalog -delete_ip {./ipcore/BasicQuadrotorControl_hdl_dut_ipcore_v1_0/component.xml} -repo_path {./ipcore} -quiet
-update_ip_catalog -add_ip {./ipcore/BasicQuadrotorControl_hdl_dut_ipcore_v1_0.zip} -repo_path {./ipcore}
+update_ip_catalog -delete_ip {./ipcore/BasicQuadrotorControlv2_hdl_dut_ipcore_v1_0/component.xml} -repo_path {./ipcore} -quiet
+update_ip_catalog -add_ip {./ipcore/BasicQuadrotorControlv2_hdl_dut_ipcore_v1_0.zip} -repo_path {./ipcore}
 update_ip_catalog
-set HDLCODERIPVLNV [get_property VLNV [get_ipdefs -filter {NAME==BasicQuadrotorControl_hdl_dut_ipcore && VERSION==1.0}]]
-set HDLCODERIPINST BasicQuadrotorControl_hdl_dut_ipcore_0
+set HDLCODERIPVLNV [get_property VLNV [get_ipdefs -filter {NAME==BasicQuadrotorControlv2_hdl_dut_ipcore && VERSION==1.0}]]
+set HDLCODERIPINST BasicQuadrotorControlv2_hdl_dut_ipcore_0
 set BDFILEPATH [get_files -quiet System.bd]
 open_bd_design $BDFILEPATH
 create_bd_cell -type ip -vlnv $HDLCODERIPVLNV $HDLCODERIPINST

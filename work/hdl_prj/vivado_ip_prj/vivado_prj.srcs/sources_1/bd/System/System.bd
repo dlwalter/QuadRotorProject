@@ -200,10 +200,10 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>BasicQuadrotorControl_hdl_dut_ipcore_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="BasicQuadrotorControl_hdl_dut_ipcore" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:instanceName>BasicQuadrotorControlv2_hdl_dut_ipcore_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="BasicQuadrotorControlv2_hdl_dut_ipcore" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">System_BasicQuadrotorControl_hdl_dut_ipcore_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">System_BasicQuadrotorControlv2_hdl_dut_ipcore_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -215,7 +215,7 @@
       </spirit:interconnection>
       <spirit:interconnection>
         <spirit:name>axi_interconnect_0_M00_AXI</spirit:name>
-        <spirit:activeInterface spirit:busRef="AXI4_Lite" spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0"/>
+        <spirit:activeInterface spirit:busRef="AXI4_Lite" spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0"/>
         <spirit:activeInterface spirit:busRef="M00_AXI" spirit:componentRef="axi_interconnect_0"/>
       </spirit:interconnection>
     </spirit:interconnections>
@@ -228,8 +228,8 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="slowest_sync_clk"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="M_AXI_GP0_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="IPCORE_CLK"/>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="AXI4_Lite_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="IPCORE_CLK"/>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="AXI4_Lite_ACLK"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_wiz_0_locked</spirit:name>
@@ -246,8 +246,8 @@
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="peripheral_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S00_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="IPCORE_RESETN"/>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="AXI4_Lite_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="IPCORE_RESETN"/>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="AXI4_Lite_ARESETN"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_CLK0</spirit:name>
@@ -263,61 +263,61 @@
       <spirit:adHocConnection>
         <spirit:name>SDO_accl_pin_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="SDO_accl_pin"/>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="SDO_accl"/>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="SDO_accl"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>SDO_gyro_pin_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="SDO_gyro_pin"/>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="SDO_gyro"/>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="SDO_gyro"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_SCL_accl</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="SCL_accl"/>
+        <spirit:name>BasicQuadrotorControlv2_hdl_dut_ipcore_0_SCL_accl</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="SCL_accl"/>
         <spirit:externalPortReference spirit:portRef="SCL_accl_pin"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_CS_accl</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="CS_accl"/>
+        <spirit:name>BasicQuadrotorControlv2_hdl_dut_ipcore_0_CS_accl</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="CS_accl"/>
         <spirit:externalPortReference spirit:portRef="CS_accl_pin"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_accl</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="SDA_accl"/>
+        <spirit:name>BasicQuadrotorControlv2_hdl_dut_ipcore_0_SDA_accl</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="SDA_accl"/>
         <spirit:externalPortReference spirit:portRef="SDA_accl_pin"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_SCLK_gyro</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="SCLK_gyro"/>
+        <spirit:name>BasicQuadrotorControlv2_hdl_dut_ipcore_0_SCLK_gyro</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="SCLK_gyro"/>
         <spirit:externalPortReference spirit:portRef="SCLK_gyro_pin"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_CS_gyro</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="CS_gyro"/>
+        <spirit:name>BasicQuadrotorControlv2_hdl_dut_ipcore_0_CS_gyro</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="CS_gyro"/>
         <spirit:externalPortReference spirit:portRef="CS_gyro_pin"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_gyro</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="SDA_gyro"/>
+        <spirit:name>BasicQuadrotorControlv2_hdl_dut_ipcore_0_SDA_gyro</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="SDA_gyro"/>
         <spirit:externalPortReference spirit:portRef="SDA_gyro_pin"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor1_1</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="PWM_motor1_1"/>
+        <spirit:name>BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor1_1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="PWM_motor1_1"/>
         <spirit:externalPortReference spirit:portRef="PWM_motor1_1_pin"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor2_1</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="PWM_motor2_1"/>
+        <spirit:name>BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor2_1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="PWM_motor2_1"/>
         <spirit:externalPortReference spirit:portRef="PWM_motor2_1_pin"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor3_1</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="PWM_motor3_1"/>
+        <spirit:name>BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor3_1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="PWM_motor3_1"/>
         <spirit:externalPortReference spirit:portRef="PWM_motor3_1_pin"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor4_1</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControl_hdl_dut_ipcore_0" spirit:portRef="PWM_motor4_1"/>
+        <spirit:name>BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor4_1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BasicQuadrotorControlv2_hdl_dut_ipcore_0" spirit:portRef="PWM_motor4_1"/>
         <spirit:externalPortReference spirit:portRef="PWM_motor4_1_pin"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
@@ -790,8 +790,8 @@
         <spirit:width>32</spirit:width>
         <spirit:segments>
           <spirit:segment>
-            <spirit:name>SEG_BasicQuadrotorControl_hdl_dut_ipcore_0_reg0</spirit:name>
-            <spirit:displayName>/BasicQuadrotorControl_hdl_dut_ipcore_0/AXI4_Lite/reg0</spirit:displayName>
+            <spirit:name>SEG_BasicQuadrotorControlv2_hdl_dut_ipcore_0_reg0</spirit:name>
+            <spirit:displayName>/BasicQuadrotorControlv2_hdl_dut_ipcore_0/AXI4_Lite/reg0</spirit:displayName>
             <spirit:addressOffset>0x40010000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>

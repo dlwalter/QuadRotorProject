@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
---Date        : Wed Apr 22 15:03:16 2015
+--Date        : Fri Apr 24 07:48:37 2015
 --Host        : maclab-3 running 64-bit major release  (build 9200)
 --Command     : generate_target System.bd
 --Design      : System
@@ -708,7 +708,7 @@ architecture STRUCTURE of System is
     PS_PORB : inout STD_LOGIC
   );
   end component System_processing_system7_0_0;
-  component System_BasicQuadrotorControl_hdl_dut_ipcore_0_0 is
+  component System_BasicQuadrotorControlv2_hdl_dut_ipcore_0_0 is
   port (
     IPCORE_CLK : in STD_LOGIC;
     IPCORE_RESETN : in STD_LOGIC;
@@ -744,17 +744,17 @@ architecture STRUCTURE of System is
     AXI4_Lite_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
     AXI4_Lite_RVALID : out STD_LOGIC
   );
-  end component System_BasicQuadrotorControl_hdl_dut_ipcore_0_0;
-  signal BasicQuadrotorControl_hdl_dut_ipcore_0_CS_accl : STD_LOGIC;
-  signal BasicQuadrotorControl_hdl_dut_ipcore_0_CS_gyro : STD_LOGIC;
-  signal BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor1_1 : STD_LOGIC;
-  signal BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor2_1 : STD_LOGIC;
-  signal BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor3_1 : STD_LOGIC;
-  signal BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor4_1 : STD_LOGIC;
-  signal BasicQuadrotorControl_hdl_dut_ipcore_0_SCLK_gyro : STD_LOGIC;
-  signal BasicQuadrotorControl_hdl_dut_ipcore_0_SCL_accl : STD_LOGIC;
-  signal BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_accl : STD_LOGIC;
-  signal BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_gyro : STD_LOGIC;
+  end component System_BasicQuadrotorControlv2_hdl_dut_ipcore_0_0;
+  signal BasicQuadrotorControlv2_hdl_dut_ipcore_0_CS_accl : STD_LOGIC;
+  signal BasicQuadrotorControlv2_hdl_dut_ipcore_0_CS_gyro : STD_LOGIC;
+  signal BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor1_1 : STD_LOGIC;
+  signal BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor2_1 : STD_LOGIC;
+  signal BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor3_1 : STD_LOGIC;
+  signal BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor4_1 : STD_LOGIC;
+  signal BasicQuadrotorControlv2_hdl_dut_ipcore_0_SCLK_gyro : STD_LOGIC;
+  signal BasicQuadrotorControlv2_hdl_dut_ipcore_0_SCL_accl : STD_LOGIC;
+  signal BasicQuadrotorControlv2_hdl_dut_ipcore_0_SDA_accl : STD_LOGIC;
+  signal BasicQuadrotorControlv2_hdl_dut_ipcore_0_SDA_gyro : STD_LOGIC;
   signal GND_1 : STD_LOGIC;
   signal SDO_accl_pin_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal SDO_gyro_pin_1 : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -847,19 +847,19 @@ architecture STRUCTURE of System is
   signal NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
 begin
-  CS_accl_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_CS_accl;
-  CS_gyro_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_CS_gyro;
-  PWM_motor1_1_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor1_1;
-  PWM_motor2_1_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor2_1;
-  PWM_motor3_1_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor3_1;
-  PWM_motor4_1_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor4_1;
-  SCLK_gyro_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_SCLK_gyro;
-  SCL_accl_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_SCL_accl;
-  SDA_accl_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_accl;
-  SDA_gyro_pin(0) <= BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_gyro;
+  CS_accl_pin(0) <= BasicQuadrotorControlv2_hdl_dut_ipcore_0_CS_accl;
+  CS_gyro_pin(0) <= BasicQuadrotorControlv2_hdl_dut_ipcore_0_CS_gyro;
+  PWM_motor1_1_pin(0) <= BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor1_1;
+  PWM_motor2_1_pin(0) <= BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor2_1;
+  PWM_motor3_1_pin(0) <= BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor3_1;
+  PWM_motor4_1_pin(0) <= BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor4_1;
+  SCLK_gyro_pin(0) <= BasicQuadrotorControlv2_hdl_dut_ipcore_0_SCLK_gyro;
+  SCL_accl_pin(0) <= BasicQuadrotorControlv2_hdl_dut_ipcore_0_SCL_accl;
+  SDA_accl_pin(0) <= BasicQuadrotorControlv2_hdl_dut_ipcore_0_SDA_accl;
+  SDA_gyro_pin(0) <= BasicQuadrotorControlv2_hdl_dut_ipcore_0_SDA_gyro;
   SDO_accl_pin_1(0) <= SDO_accl_pin(0);
   SDO_gyro_pin_1(0) <= SDO_gyro_pin(0);
-BasicQuadrotorControl_hdl_dut_ipcore_0: component System_BasicQuadrotorControl_hdl_dut_ipcore_0_0
+BasicQuadrotorControlv2_hdl_dut_ipcore_0: component System_BasicQuadrotorControlv2_hdl_dut_ipcore_0_0
     port map (
       AXI4_Lite_ACLK => clk_wiz_0_clk_out1,
       AXI4_Lite_ARADDR(15 downto 0) => axi_interconnect_0_M00_AXI_ARADDR(15 downto 0),
@@ -880,18 +880,18 @@ BasicQuadrotorControl_hdl_dut_ipcore_0: component System_BasicQuadrotorControl_h
       AXI4_Lite_WREADY => axi_interconnect_0_M00_AXI_WREADY,
       AXI4_Lite_WSTRB(3 downto 0) => axi_interconnect_0_M00_AXI_WSTRB(3 downto 0),
       AXI4_Lite_WVALID => axi_interconnect_0_M00_AXI_WVALID,
-      CS_accl => BasicQuadrotorControl_hdl_dut_ipcore_0_CS_accl,
-      CS_gyro => BasicQuadrotorControl_hdl_dut_ipcore_0_CS_gyro,
+      CS_accl => BasicQuadrotorControlv2_hdl_dut_ipcore_0_CS_accl,
+      CS_gyro => BasicQuadrotorControlv2_hdl_dut_ipcore_0_CS_gyro,
       IPCORE_CLK => clk_wiz_0_clk_out1,
       IPCORE_RESETN => proc_sys_reset_0_peripheral_aresetn(0),
-      PWM_motor1_1 => BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor1_1,
-      PWM_motor2_1 => BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor2_1,
-      PWM_motor3_1 => BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor3_1,
-      PWM_motor4_1 => BasicQuadrotorControl_hdl_dut_ipcore_0_PWM_motor4_1,
-      SCLK_gyro => BasicQuadrotorControl_hdl_dut_ipcore_0_SCLK_gyro,
-      SCL_accl => BasicQuadrotorControl_hdl_dut_ipcore_0_SCL_accl,
-      SDA_accl => BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_accl,
-      SDA_gyro => BasicQuadrotorControl_hdl_dut_ipcore_0_SDA_gyro,
+      PWM_motor1_1 => BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor1_1,
+      PWM_motor2_1 => BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor2_1,
+      PWM_motor3_1 => BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor3_1,
+      PWM_motor4_1 => BasicQuadrotorControlv2_hdl_dut_ipcore_0_PWM_motor4_1,
+      SCLK_gyro => BasicQuadrotorControlv2_hdl_dut_ipcore_0_SCLK_gyro,
+      SCL_accl => BasicQuadrotorControlv2_hdl_dut_ipcore_0_SCL_accl,
+      SDA_accl => BasicQuadrotorControlv2_hdl_dut_ipcore_0_SDA_accl,
+      SDA_gyro => BasicQuadrotorControlv2_hdl_dut_ipcore_0_SDA_gyro,
       SDO_accl => SDO_accl_pin_1(0),
       SDO_gyro => SDO_gyro_pin_1(0)
     );
