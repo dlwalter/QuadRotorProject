@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="dlwalter" Host="MACLAB-3" Pid="5124">
-    </Process>
-</ProcessHandle>
